@@ -5,10 +5,6 @@ title = "Your title"
 theme = "hugo-theme-m10c"
 paginate = 5
 
-title = "My title"
-theme = "hugo-theme-m10c"
-paginate = 5
-
 [params]
   author = "John Doe"
   description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula turpis sit amet elit pretium."
