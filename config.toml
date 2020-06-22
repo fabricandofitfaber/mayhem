@@ -6,11 +6,11 @@ theme = "hugo-theme-m10c"
 paginate = 5
 
 [params]
-  author = "John Doe"
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula turpis sit amet elit pretium."
+  author = "Ali Osman ÖZTOP"
+  description = "Finans ve R"
   [[params.social]]
     name = "github"
-    url = "https://github.com/gohugoio"
+    url = "https://github.com/fabricandofitfaber"
   [[params.social]]
     name = "twitter"
     url = "https://twitter.com/gohugoio"
