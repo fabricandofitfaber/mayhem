@@ -1,3 +1,5 @@
+# https://bookdown.org/yihui/blogdown/
+
 baseURL = "https://projectmayhem.netlify.app"
 title = "Your title"
 theme = "hugo-theme-m10c"
