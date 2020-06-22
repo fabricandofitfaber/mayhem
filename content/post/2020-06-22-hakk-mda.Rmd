@@ -1,0 +1,24 @@
+---
+title: Hakkımda
+author: fabricandofitfaber
+date: '2020-06-22'
+slug: hakk-mda
+categories:
+  - R
+tags:
+  - test
+---
+
+## Başlık 1
+
+Burada editliyoruz yazıyı
+
+## Başlık 2
+
+Burada kodlar verilir.
+
+```{r}
+mydata <- mtcars
+plot(mtcars)
+```
+

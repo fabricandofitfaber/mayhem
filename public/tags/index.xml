@@ -5,10 +5,19 @@
     <link>https://projectmayhem.netlify.app/tags/</link>
     <description>Recent content in Tags on Your title</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 22 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://projectmayhem.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>test</title>
+      <link>https://projectmayhem.netlify.app/tags/test/</link>
+      <pubDate>Mon, 22 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://projectmayhem.netlify.app/tags/test/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>plot</title>
@@ -124,15 +133,6 @@
       <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
       
       <guid>https://projectmayhem.netlify.app/tags/jekyll/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>test</title>
-      <link>https://projectmayhem.netlify.app/tags/test/</link>
-      <pubDate>Thu, 09 Jan 1012 00:00:00 +0000</pubDate>
-      
-      <guid>https://projectmayhem.netlify.app/tags/test/</guid>
       <description></description>
     </item>
     
