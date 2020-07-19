@@ -1,14 +1,12 @@
 ---
-title: Türkiye Mutluluk Endeksi Haritası
-author: fabricandofitfaber
-date: '2020-07-19'
-slug: türkiye-mutluluk-endeksi-haritas
-categories: []
-tags: [r, ggplot2, maps]
-editor_options: 
-  chunk_output_type: inline
+title: "Mutluluk"
+author: "Ali Osman ÖZTOP"
+date: "19 07 2020"
+output: html_document
 ---
 
+
+```{r}
 # packages
 
 install.packages("tidyverse")
@@ -157,3 +155,6 @@ ggplot(final_map) +
                        na.value = "white") +
   theme(plot.title = element_text(hjust = 0.5), 
         plot.subtitle = element_text(hjust = 0.5))
+
+```
+
