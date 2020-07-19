@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>maps on Your title</title>
+    <link>/tags/maps/</link>
+    <description>Recent content in maps on Your title</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 19 Jul 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/maps/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Türkiye Mutluluk Endeksi Haritası</title>
+      <link>/post/t%C3%BCrkiye-mutluluk-endeksi-haritas/</link>
+      <pubDate>Sun, 19 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/t%C3%BCrkiye-mutluluk-endeksi-haritas/</guid>
+      <description>packages install.packages(&amp;ldquo;tidyverse&amp;rdquo;) install.packages(&amp;ldquo;sp&amp;rdquo;) # for spatial data install.packages(&amp;ldquo;map&amp;rdquo;) install.packages(&amp;ldquo;mapproj&amp;rdquo;) install.packages(&amp;ldquo;ggmap&amp;rdquo;) install.packages(&amp;ldquo;DeducerSpatial&amp;rdquo;) install.packages(&amp;ldquo;maps&amp;rdquo;)
+help(package = &amp;ldquo;maps&amp;rdquo;)
+Loading required package: maps require(maps)
+map(&amp;ldquo;usa&amp;rdquo;) # map komutu harita ve poligon çizimi için kullanılıyor
+map(&amp;ldquo;county&amp;rdquo;)
+data(unemp) # data komutu yardımıyla R&amp;rsquo;ın içerisinde yer alan dataları enviromentimizie yüklüyoruz. data(county.fips)
+head(unemp) # datamızın ilk 6 satırını görmek için head komutunu kullanıyoruz. head(county.fips)
+colors &amp;lt;- c(&amp;quot;#F1EEF6&amp;rdquo;, &amp;ldquo;#D4B9DA&amp;rdquo;, &amp;ldquo;#C994C7&amp;rdquo;, &amp;ldquo;#DF65B0&amp;rdquo;, &amp;ldquo;#DD1C77&amp;rdquo;, &amp;ldquo;#980043&amp;rdquo;)
+unemp$colorBuckets &amp;lt;- as.numeric(cut(unemp$unemp, c(0, 2, 4, 6, 8, 10, 100))) head(unemp)</description>
+    </item>
+    
+  </channel>
+</rss>

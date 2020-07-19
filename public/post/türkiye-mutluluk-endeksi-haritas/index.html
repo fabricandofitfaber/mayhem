@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>Türkiye Mutluluk Endeksi Haritası // Your title</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.72.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Ali Osman ÖZTOP" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/css/main.min.366e0ee61030653c4f8925f9bd4a9db5b3c23b09a6fddf2bccb02e2426ecde43.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Türkiye Mutluluk Endeksi Haritası"/>
+<meta name="twitter:description" content="packages install.packages(&ldquo;tidyverse&rdquo;) install.packages(&ldquo;sp&rdquo;) # for spatial data install.packages(&ldquo;map&rdquo;) install.packages(&ldquo;mapproj&rdquo;) install.packages(&ldquo;ggmap&rdquo;) install.packages(&ldquo;DeducerSpatial&rdquo;) install.packages(&ldquo;maps&rdquo;)
+help(package = &ldquo;maps&rdquo;)
+Loading required package: maps require(maps)
+map(&ldquo;usa&rdquo;) # map komutu harita ve poligon çizimi için kullanılıyor
+map(&ldquo;county&rdquo;)
+data(unemp) # data komutu yardımıyla R&rsquo;ın içerisinde yer alan dataları enviromentimizie yüklüyoruz. data(county.fips)
+head(unemp) # datamızın ilk 6 satırını görmek için head komutunu kullanıyoruz. head(county.fips)
+colors &lt;- c(&quot;#F1EEF6&rdquo;, &ldquo;#D4B9DA&rdquo;, &ldquo;#C994C7&rdquo;, &ldquo;#DF65B0&rdquo;, &ldquo;#DD1C77&rdquo;, &ldquo;#980043&rdquo;)
+unemp$colorBuckets &lt;- as.numeric(cut(unemp$unemp, c(0, 2, 4, 6, 8, 10, 100))) head(unemp)"/>
+
+    <meta property="og:title" content="Türkiye Mutluluk Endeksi Haritası" />
+<meta property="og:description" content="packages install.packages(&ldquo;tidyverse&rdquo;) install.packages(&ldquo;sp&rdquo;) # for spatial data install.packages(&ldquo;map&rdquo;) install.packages(&ldquo;mapproj&rdquo;) install.packages(&ldquo;ggmap&rdquo;) install.packages(&ldquo;DeducerSpatial&rdquo;) install.packages(&ldquo;maps&rdquo;)
+help(package = &ldquo;maps&rdquo;)
+Loading required package: maps require(maps)
+map(&ldquo;usa&rdquo;) # map komutu harita ve poligon çizimi için kullanılıyor
+map(&ldquo;county&rdquo;)
+data(unemp) # data komutu yardımıyla R&rsquo;ın içerisinde yer alan dataları enviromentimizie yüklüyoruz. data(county.fips)
+head(unemp) # datamızın ilk 6 satırını görmek için head komutunu kullanıyoruz. head(county.fips)
+colors &lt;- c(&quot;#F1EEF6&rdquo;, &ldquo;#D4B9DA&rdquo;, &ldquo;#C994C7&rdquo;, &ldquo;#DF65B0&rdquo;, &ldquo;#DD1C77&rdquo;, &ldquo;#980043&rdquo;)
+unemp$colorBuckets &lt;- as.numeric(cut(unemp$unemp, c(0, 2, 4, 6, 8, 10, 100))) head(unemp)" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/t%C3%BCrkiye-mutluluk-endeksi-haritas/" />
+<meta property="article:published_time" content="2020-07-19T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-07-19T00:00:00+00:00" />
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="/"><img class="app-header-avatar" src="/avatar.jpg" alt="Ali Osman ÖZTOP" /></a>
+      <h1>Your title</h1>
+      <p>Finans ve R</p>
+      <div class="app-header-social">
+        
+          <a target="_blank" href="https://github.com/fabricandofitfaber" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg></a>
+        
+          <a target="_blank" href="https://twitter.com/gohugoio" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-twitter">
+  <title>twitter</title>
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+</svg></a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Türkiye Mutluluk Endeksi Haritası</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Jul 19, 2020
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          3 min read
+        </div><div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line>
+</svg>
+          <a class="tag" href="/tags/r/">r</a><a class="tag" href="/tags/ggplot2/">ggplot2</a><a class="tag" href="/tags/maps/">maps</a></div></div>
+    </header>
+    <div class="post-content">
+      <h1 id="packages">packages</h1>
+<p>install.packages(&ldquo;tidyverse&rdquo;)
+install.packages(&ldquo;sp&rdquo;) # for spatial data
+install.packages(&ldquo;map&rdquo;)
+install.packages(&ldquo;mapproj&rdquo;)
+install.packages(&ldquo;ggmap&rdquo;)
+install.packages(&ldquo;DeducerSpatial&rdquo;)
+install.packages(&ldquo;maps&rdquo;)</p>
+<p>help(package = &ldquo;maps&rdquo;)</p>
+<h2 id="loading-required-package-maps">Loading required package: maps</h2>
+<p>require(maps)</p>
+<p>map(&ldquo;usa&rdquo;) # map komutu harita ve poligon çizimi için kullanılıyor</p>
+<p>map(&ldquo;county&rdquo;)</p>
+<p>data(unemp) # data komutu yardımıyla R&rsquo;ın içerisinde yer alan dataları enviromentimizie yüklüyoruz.
+data(county.fips)</p>
+<p>head(unemp) # datamızın ilk 6 satırını görmek için head komutunu kullanıyoruz.
+head(county.fips)</p>
+<p>colors &lt;- c(&quot;#F1EEF6&rdquo;, &ldquo;#D4B9DA&rdquo;, &ldquo;#C994C7&rdquo;, &ldquo;#DF65B0&rdquo;, &ldquo;#DD1C77&rdquo;, &ldquo;#980043&rdquo;)</p>
+<p>unemp$colorBuckets &lt;- as.numeric(cut(unemp$unemp, c(0, 2, 4, 6, 8, 10, 100)))
+head(unemp)</p>
+<p>colorsmatched &lt;- unemp$colorBuckets[match(county.fips$fips, unemp$fips)]
+map(&ldquo;county&rdquo;, col = colors[colorsmatched], fill = TRUE, resolution = 0, lty = 0, projection = &ldquo;polyconic&rdquo;)</p>
+<h1 id="add-border-around-each-state">Add border around each State</h1>
+<p>map(&ldquo;state&rdquo;, col = &ldquo;white&rdquo;, fill = FALSE, add = TRUE, lty = 1, lwd = 0.2, projection = &ldquo;polyconic&rdquo;)
+title(&ldquo;Eyaletlerin işsizlik oranı / Amerika, 2009&rdquo;)
+leg.txt &lt;- c(&ldquo;&lt;2%&rdquo;, &ldquo;2-4%&rdquo;, &ldquo;4-6%&rdquo;, &ldquo;6-8%&rdquo;, &ldquo;8-10%&rdquo;, &ldquo;&gt;10%&quot;)
+legend(&ldquo;topright&rdquo;, leg.txt, horiz = TRUE, fill = colors)</p>
+<h1 id="türkiye-haritası-için-httpsgadmorgdownload_country_v3html">Türkiye haritası için <a href="https://gadm.org/download_country_v3.html">https://gadm.org/download_country_v3.html</a></h1>
+<p>require(tidyverse)</p>
+<p>library(sp) # Konumsal (Spatial) veri için</p>
+<p>tur &lt;- readRDS(&ldquo;gadm36_TUR_1_sp.rds&rdquo;) # reading a spatial data
+plot(tur)</p>
+<p>tur@data %&gt;%
+as_tibble() %&gt;%
+head(10)</p>
+<p>ggplot(tur, aes(x = long, y = lat)) +
+geom_polygon()</p>
+<h2 id="regions-defined-for-each-polygons">Regions defined for each Polygons</h2>
+<p>ggplot(tur, aes(x = long, y = lat)) +
+geom_polygon(aes(group = group)) +
+coord_fixed()</p>
+<h2 id="regions-defined-for-each-polygons-1">Regions defined for each Polygons</h2>
+<p>tur_for &lt;- fortify(tur) # Bu fonksiyon &lsquo;sp&rsquo; paketinin içinde.</p>
+<h2 id="regions-defined-for-each-polygons-2">Regions defined for each Polygons</h2>
+<p>head(tur_for) # her ilin lattitude ve longitude değerleri gösterililyor.</p>
+<p>ggplot(tur_for) +
+geom_polygon(aes(x = long, y = lat, group = group),
+color = &ldquo;white&rdquo;, fill = &ldquo;red&rdquo;
+) +
+theme_void() +
+coord_fixed()</p>
+<p>library(readxl)</p>
+<p>mutluluk &lt;- read_excel(&ldquo;mutluluk.xls&rdquo;)
+head(mutluluk)</p>
+<p>head(tur@data$NAME_1)</p>
+<p>head(mutluluk$İl)</p>
+<p>x &lt;- &ldquo;Ali Osman&rdquo;
+gsub(&ldquo;an&rdquo;, &ldquo;on&rdquo;, x)</p>
+<p>turkceden_ingilizceye &lt;- function(dataset) {
+turkce_harfler &lt;- c(&ldquo;Ç&rdquo;, &ldquo;Ş&rdquo;, &ldquo;Ğ&rdquo;, &ldquo;İ&rdquo;, &ldquo;Ü&rdquo;, &ldquo;Ö&rdquo;, &ldquo;ç&rdquo;, &ldquo;ş&rdquo;, &ldquo;ğ&rdquo;, &ldquo;ı&rdquo;, &ldquo;ü&rdquo;, &ldquo;ö&rdquo;)
+ingilizce_harfler &lt;- c(&ldquo;C&rdquo;, &ldquo;S&rdquo;, &ldquo;G&rdquo;, &ldquo;I&rdquo;, &ldquo;U&rdquo;, &ldquo;O&rdquo;, &ldquo;c&rdquo;, &ldquo;s&rdquo;, &ldquo;g&rdquo;, &ldquo;i&rdquo;, &ldquo;u&rdquo;, &ldquo;o&rdquo;)
+dataset &lt;- mgsub(turkce_harfler, ingilizce_harfler, dataset)
+return(dataset)
+}</p>
+<h1 id="multiple-gsub-function">Multiple gsub function</h1>
+<p>mgsub &lt;- function(pattern, replacement, x, &hellip;) {
+n &lt;- length(pattern)
+if (n != length(replacement)) {
+stop(&ldquo;pattern and replacement do not have the same length.&quot;)
+}
+result &lt;- x
+for (i in 1:n) {
+result &lt;- gsub(pattern[i], replacement[i], result)
+}
+return(result)
+}</p>
+<p>tur@data$NAME_1 &lt;- turkceden_ingilizceye(tur@data$NAME_1)
+tur@data$NAME_1 &lt;- gsub(&ldquo;K. Maras&rdquo;, &ldquo;Kahramanmaras&rdquo;, tur@data$NAME_1)
+tur@data$NAME_1 &lt;- gsub(&ldquo;Kinkkale&rdquo;, &ldquo;Kirikkale&rdquo;, tur@data$NAME_1)
+tur@data$NAME_1 &lt;- gsub(&ldquo;Zinguldak&rdquo;, &ldquo;Zonguldak&rdquo;, tur@data$NAME_1)
+tur@data$NAME_1 &lt;- gsub(&ldquo;Afyon&rdquo;, &ldquo;Afyonkarahisar&rdquo;, tur@data$NAME_1)</p>
+<p>mutluluk$İl &lt;- turkceden_ingilizceye(mutluluk$İl)</p>
+<p>mutluluk %&gt;% as_tibble()</p>
+<p>id_and_cities &lt;- data_frame(
+id = rownames(tur@data),
+İl = tur@data$NAME_1
+) %&gt;%
+left_join(mutluluk, by = &ldquo;İl&rdquo;)</p>
+<p>head(id_and_cities)</p>
+<p>final_map &lt;- left_join(tur_for, id_and_cities, by = &ldquo;id&rdquo;)</p>
+<p>head(final_map)</p>
+<p>final_map &lt;- final_map %&gt;% 
+mutate(mutluluk = <code>Mutluluk düzeyi</code>)</p>
+<p>ggplot(final_map) +
+geom_polygon(aes(x = long, y = lat, group = group, fill = mutluluk), 
+color = &ldquo;grey&rdquo;) +
+coord_map() +
+theme_void() +
+labs(title = &ldquo;Türkiye&rsquo;nin illere göre mutluluk indeksi-2015&rdquo;, 
+caption = &ldquo;Kaynak: Türkiye Istatistik Kurumu&rdquo;) +
+scale_fill_distiller(name = &ldquo;Mutluluk indeksi&rdquo;, 
+palette = &ldquo;Spectral&rdquo;, 
+limits = c(0, 100), 
+na.value = &ldquo;white&rdquo;) +
+theme(plot.title = element_text(hjust = 0.5), 
+plot.subtitle = element_text(hjust = 0.5))</p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
