@@ -11,7 +11,7 @@ tags:
   - olasılık tablosu
 ---
 
-## Import dataset
+### Import dataset
 ```{r}
 post <- read.csv('https://raw.githubusercontent.com/fabricandofitfaber/mayhem/master/data/PostSurvey.csv')
 ```
