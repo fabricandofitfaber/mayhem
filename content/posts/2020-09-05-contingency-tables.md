@@ -11,9 +11,9 @@ tags:
   - olasılık tablosu
 ---
 
-#Import dataset (code below only works if file is in working directory)
+#Import dataset
 ```{r}
-post <- read.csv('PostSurvey.csv')
+post <- read.csv('https://raw.githubusercontent.com/fabricandofitfaber/mayhem/master/PostSurvey.csv')
 ```
 
 #Create contingency table
