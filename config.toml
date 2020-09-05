@@ -1,7 +1,7 @@
 # https://bookdown.org/yihui/blogdown/
 
 baseURL = "https://projectmayhem.netlify.app"
-title = "Your title"
+title = "R & Analiz"
 theme = "hugo-theme-m10c"
 paginate = 5
 
