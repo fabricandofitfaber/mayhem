@@ -13,7 +13,7 @@ tags:
 
 ## Import dataset
 ```{r}
-med <- read.csv('MedicalData.csv')
+med <- read.csv('https://raw.githubusercontent.com/fabricandofitfaber/mayhem/master/MedicalData.csv')
 ```
 
 ## Create and view frequency table of age groups
