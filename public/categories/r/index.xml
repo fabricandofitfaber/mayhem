@@ -1,14 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>R on Your title</title>
+    <title>R on R &amp; Analiz</title>
     <link>/categories/r/</link>
-    <description>Recent content in R on Your title</description>
+    <description>Recent content in R on R &amp; Analiz</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 12 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 05 Sep 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Contingency</title>
+      <link>/posts/contingency/</link>
+      <pubDate>Sat, 05 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/contingency/</guid>
+      <description>Import datasetpost &amp;lt;- read.csv(&amp;#39;https://raw.githubusercontent.com/fabricandofitfaber/mayhem/master/PostSurvey.csv&amp;#39;)Create contingency tablegendsport &amp;lt;- table(post$UT_sport, post$gender)gendsport## ## Female Male## no 150 16## yes 40 8Row percentagesprop.table(gendsport,1)## ## Female Male## no 0.90361446 0.09638554## yes 0.83333333 0.16666667Column percentagesprop.table(gendsport,2)## ## Female Male## no 0.7894737 0.6666667## yes 0.2105263 0.3333333Make grouped bar chartbarplot(gendsport,beside=T,legend=T,main=&amp;#39;Play Sports by Gender&amp;#39;, xlab=&amp;#39;Gender&amp;#39;,ylab=&amp;#39;Frequency&amp;#39;)Make mosaic plotbarplot(prop.</description>
+    </item>
+    
+    <item>
+      <title>Numberology</title>
+      <link>/posts/numberology/</link>
+      <pubDate>Sun, 30 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/numberology/</guid>
+      <description>title: &amp;lsquo;Numberology&amp;rsquo; author: fabricandofitfaber date: &amp;lsquo;2020-08-30&amp;rsquo; slug: &#39;&amp;rsquo; categories:
+ R tags: plot R Markdown Description: &#39;&amp;rsquo; Tags: [tidyverse] Categories: [R] DisableComments: no   https://gofile.io/d/OIeaLH (Veri Seti) colnames(umf)[1] &amp;lt;- &amp;quot;ID&amp;quot;colnames(umf)[2] &amp;lt;- &amp;quot;Number100&amp;quot;colnames(umf)[4] &amp;lt;- &amp;quot;L_M&amp;quot;library(tidyverse) umf %&amp;gt;%ggplot(aes(value)) +geom_histogram(binwidth=.5, colour=&amp;quot;red&amp;quot;, fill=&amp;quot;grey&amp;quot;) +theme(axis.text.x = element_text(angle = 90, vjust = 0.5)) +scale_x_continuous(breaks = umf$value)umf %&amp;gt;%ggplot(aes(value, color_class)) +geom_line(alpha = .5, color = &amp;quot;gray&amp;quot;) +geom_point(aes(color = factor(color_class))) +geom_text(aes(label = color_class), hjust = 1,check_overlap = TRUE) +theme(legend.</description>
+    </item>
     
     <item>
       <title>RStudio&#39;da .xlsx Dosyası Oluşturmak</title>

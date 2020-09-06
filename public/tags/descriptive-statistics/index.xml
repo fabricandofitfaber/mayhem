@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>descriptive statistics on R &amp; Analiz</title>
+    <link>/tags/descriptive-statistics/</link>
+    <description>Recent content in descriptive statistics on R &amp; Analiz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 05 Sep 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/descriptive-statistics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Contingency</title>
+      <link>/posts/contingency/</link>
+      <pubDate>Sat, 05 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/contingency/</guid>
+      <description>Import datasetpost &amp;lt;- read.csv(&amp;#39;https://raw.githubusercontent.com/fabricandofitfaber/mayhem/master/PostSurvey.csv&amp;#39;)Create contingency tablegendsport &amp;lt;- table(post$UT_sport, post$gender)gendsport## ## Female Male## no 150 16## yes 40 8Row percentagesprop.table(gendsport,1)## ## Female Male## no 0.90361446 0.09638554## yes 0.83333333 0.16666667Column percentagesprop.table(gendsport,2)## ## Female Male## no 0.7894737 0.6666667## yes 0.2105263 0.3333333Make grouped bar chartbarplot(gendsport,beside=T,legend=T,main=&amp;#39;Play Sports by Gender&amp;#39;, xlab=&amp;#39;Gender&amp;#39;,ylab=&amp;#39;Frequency&amp;#39;)Make mosaic plotbarplot(prop.</description>
+    </item>
+    
+  </channel>
+</rss>

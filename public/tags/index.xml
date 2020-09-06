@@ -1,19 +1,55 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Your title</title>
+    <title>Tags on R &amp; Analiz</title>
     <link>/tags/</link>
-    <description>Recent content in Tags on Your title</description>
+    <description>Recent content in Tags on R &amp; Analiz</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 19 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 05 Sep 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Contingency Tables</title>
+      <link>/tags/contingency-tables/</link>
+      <pubDate>Sat, 05 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/contingency-tables/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>descriptive statistics</title>
+      <link>/tags/descriptive-statistics/</link>
+      <pubDate>Sat, 05 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/descriptive-statistics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Grouped Bar Charts</title>
+      <link>/tags/grouped-bar-charts/</link>
+      <pubDate>Sat, 05 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/grouped-bar-charts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Grouped Pie Charts</title>
+      <link>/tags/grouped-pie-charts/</link>
+      <pubDate>Sat, 05 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/grouped-pie-charts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>ggplot2</title>
       <link>/tags/ggplot2/</link>
-      <pubDate>Sun, 19 Jul 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 30 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/ggplot2/</guid>
       <description></description>
