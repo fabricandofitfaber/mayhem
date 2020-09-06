@@ -28,7 +28,7 @@ prop.table(agetab)
 ```
 
 ## Create bar chart
-```{r barplot}
+```{r}
 barplot(agetab,main='Age Distribution',xlab='Age Group',ylab='Frequency',ylim=c(0,100))
 ```
 
@@ -38,7 +38,7 @@ med$Age <- factor(med$Age, levels=c('young adult','adult','older adult'))
 ```
 
 ## Re-run bar chart
-```{r barplot}
+```{r}
 agetab <- table(med$Age)
 barplot(agetab,main='Age Distribution',xlab='Age Group',ylab='Frequency',ylim=c(0,100))
 ```
