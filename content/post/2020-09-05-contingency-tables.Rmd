@@ -1,10 +1,10 @@
 ---
-title: contingency tables
+title: Contingency Tables
 author: fabricandofitfaber
 date: '2020-09-05'
 slug: contingency-tables
-categories: []
-tags: []
+categories: ["Descriptive Statistics and Displays"]
+tags: ["Contingency Tables", "Grouped Pie Charts", "Grouped Bar Charts"]
 ---
 
 ## Import dataset
