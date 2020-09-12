@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ggplot2 on R &amp; Analiz</title>
-    <link>/tags/ggplot2/</link>
+    <link>https://projectmayhem.netlify.app/tags/ggplot2/</link>
     <description>Recent content in ggplot2 on R &amp; Analiz</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 30 Aug 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/ggplot2/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://projectmayhem.netlify.app/tags/ggplot2/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Numberology</title>
-      <link>/posts/numberology/</link>
+      <link>https://projectmayhem.netlify.app/posts/numberology/</link>
       <pubDate>Sun, 30 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>/posts/numberology/</guid>
+      <guid>https://projectmayhem.netlify.app/posts/numberology/</guid>
       <description>title: &amp;lsquo;Numberology&amp;rsquo; author: fabricandofitfaber date: &amp;lsquo;2020-08-30&amp;rsquo; slug: &#39;&amp;rsquo; categories:
  R tags: plot R Markdown Description: &#39;&amp;rsquo; Tags: [tidyverse] Categories: [R] DisableComments: no   https://gofile.io/d/OIeaLH (Veri Seti) colnames(umf)[1] &amp;lt;- &amp;quot;ID&amp;quot;colnames(umf)[2] &amp;lt;- &amp;quot;Number100&amp;quot;colnames(umf)[4] &amp;lt;- &amp;quot;L_M&amp;quot;library(tidyverse) umf %&amp;gt;%ggplot(aes(value)) +geom_histogram(binwidth=.5, colour=&amp;quot;red&amp;quot;, fill=&amp;quot;grey&amp;quot;) +theme(axis.text.x = element_text(angle = 90, vjust = 0.5)) +scale_x_continuous(breaks = umf$value)umf %&amp;gt;%ggplot(aes(value, color_class)) +geom_line(alpha = .5, color = &amp;quot;gray&amp;quot;) +geom_point(aes(color = factor(color_class))) +geom_text(aes(label = color_class), hjust = 1,check_overlap = TRUE) +theme(legend.</description>
     </item>
     
     <item>
       <title>Türkiye Mutluluk Endeksi Haritası</title>
-      <link>/post/t%C3%BCrkiye-mutluluk-endeksi-haritas/</link>
+      <link>https://projectmayhem.netlify.app/post/t%C3%BCrkiye-mutluluk-endeksi-haritas/</link>
       <pubDate>Sun, 19 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/t%C3%BCrkiye-mutluluk-endeksi-haritas/</guid>
+      <guid>https://projectmayhem.netlify.app/post/t%C3%BCrkiye-mutluluk-endeksi-haritas/</guid>
       <description>packages install.packages(&amp;ldquo;tidyverse&amp;rdquo;) install.packages(&amp;ldquo;sp&amp;rdquo;) # for spatial data install.packages(&amp;ldquo;map&amp;rdquo;) install.packages(&amp;ldquo;mapproj&amp;rdquo;) install.packages(&amp;ldquo;ggmap&amp;rdquo;) install.packages(&amp;ldquo;DeducerSpatial&amp;rdquo;) install.packages(&amp;ldquo;maps&amp;rdquo;)
 help(package = &amp;ldquo;maps&amp;rdquo;)
 Loading required package: maps require(maps)

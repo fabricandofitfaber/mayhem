@@ -2,20 +2,34 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Grouped Bar Charts on R &amp; Analiz</title>
-    <link>/tags/grouped-bar-charts/</link>
+    <link>https://projectmayhem.netlify.app/tags/grouped-bar-charts/</link>
     <description>Recent content in Grouped Bar Charts on R &amp; Analiz</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 05 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 12 Sep 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/grouped-bar-charts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://projectmayhem.netlify.app/tags/grouped-bar-charts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Frequency Tables</title>
+      <link>https://projectmayhem.netlify.app/posts/frequency-tables/</link>
+      <pubDate>Sat, 12 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://projectmayhem.netlify.app/posts/frequency-tables/</guid>
+      <description>#Import dataset (code below only works if file is in working directory)
+med &amp;lt;- read.csv(&amp;#39;https://raw.githubusercontent.com/fabricandofitfaber/mayhem/master/MedicalData.csv&amp;#39;)#Create and view frequency table of age groups
+agetab &amp;lt;- table(med$Age)agetab## ## adult older adult young adult ## 99 27 29#View table proportions
+prop.table(agetab)## ## adult older adult young adult ## 0.6387097 0.1741935 0.1870968#Create bar chart
+barplot(agetab,main=&amp;#39;Age Distribution&amp;#39;,xlab=&amp;#39;Age Group&amp;#39;,ylab=&amp;#39;Frequency&amp;#39;,ylim=c(0,100))#Re-order age categories
+med$Age &amp;lt;- factor(med$Age, levels=c(&amp;#39;young adult&amp;#39;,&amp;#39;adult&amp;#39;,&amp;#39;older adult&amp;#39;))#Re-run bar chart</description>
+    </item>
+    
+    <item>
       <title>Contingency Tables</title>
-      <link>/post/contingency-tables/</link>
+      <link>https://projectmayhem.netlify.app/post/contingency-tables/</link>
       <pubDate>Sat, 05 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/contingency-tables/</guid>
+      <guid>https://projectmayhem.netlify.app/post/contingency-tables/</guid>
       <description>Import datasetpost &amp;lt;- read.csv(&amp;#39;https://raw.githubusercontent.com/fabricandofitfaber/mayhem/master/PostSurvey.csv&amp;#39;)Create contingency tablegendsport &amp;lt;- table(post$UT_sport, post$gender)gendsport## ## Female Male## no 150 16## yes 40 8Row percentagesprop.table(gendsport,1)## ## Female Male## no 0.90361446 0.09638554## yes 0.83333333 0.16666667Column percentagesprop.table(gendsport,2)## ## Female Male## no 0.7894737 0.6666667## yes 0.2105263 0.3333333Make grouped bar chartbarplot(gendsport,beside=T,legend=T,main=&amp;#39;Play Sports by Gender&amp;#39;, xlab=&amp;#39;Gender&amp;#39;,ylab=&amp;#39;Frequency&amp;#39;)Make mosaic plotbarplot(prop.</description>
     </item>
     

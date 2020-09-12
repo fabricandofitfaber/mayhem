@@ -3,239 +3,244 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/categories/</loc>
+    <loc>https://projectmayhem.netlify.app/categories/</loc>
+    <lastmod>2020-09-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://projectmayhem.netlify.app/categories/descriptive-statistics-and-displays/</loc>
+    <lastmod>2020-09-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://projectmayhem.netlify.app/tags/frequency-tables/</loc>
+    <lastmod>2020-09-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://projectmayhem.netlify.app/posts/frequency-tables/</loc>
+    <lastmod>2020-09-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://projectmayhem.netlify.app/tags/grouped-bar-charts/</loc>
+    <lastmod>2020-09-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://projectmayhem.netlify.app/tags/pie-chart/</loc>
+    <lastmod>2020-09-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://projectmayhem.netlify.app/posts/</loc>
+    <lastmod>2020-09-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://projectmayhem.netlify.app/categories/r/</loc>
+    <lastmod>2020-09-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://projectmayhem.netlify.app/</loc>
+    <lastmod>2020-09-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://projectmayhem.netlify.app/tags/</loc>
+    <lastmod>2020-09-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://projectmayhem.netlify.app/tags/contingency-tables/</loc>
     <lastmod>2020-09-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/contingency/</loc>
+    <loc>https://projectmayhem.netlify.app/post/contingency-tables/</loc>
     <lastmod>2020-09-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/contingency-tables/</loc>
+    <loc>https://projectmayhem.netlify.app/tags/grouped-pie-charts/</loc>
     <lastmod>2020-09-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/contingency-tables/</loc>
+    <loc>https://projectmayhem.netlify.app/post/</loc>
     <lastmod>2020-09-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/descriptive-statistics/</loc>
-    <lastmod>2020-09-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/descriptive-statistics-and-displays/</loc>
-    <lastmod>2020-09-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/grouped-bar-charts/</loc>
-    <lastmod>2020-09-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/grouped-pie-charts/</loc>
-    <lastmod>2020-09-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/posts/</loc>
-    <lastmod>2020-09-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2020-09-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/r/</loc>
-    <lastmod>2020-09-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2020-09-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2020-09-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/ggplot2/</loc>
+    <loc>https://projectmayhem.netlify.app/tags/ggplot2/</loc>
     <lastmod>2020-08-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/numberology/</loc>
+    <loc>https://projectmayhem.netlify.app/posts/numberology/</loc>
     <lastmod>2020-08-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/maps/</loc>
+    <loc>https://projectmayhem.netlify.app/tags/maps/</loc>
     <lastmod>2020-07-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/r/</loc>
+    <loc>https://projectmayhem.netlify.app/tags/r/</loc>
     <lastmod>2020-07-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/t%C3%BCrkiye-mutluluk-endeksi-haritas/</loc>
+    <loc>https://projectmayhem.netlify.app/post/t%C3%BCrkiye-mutluluk-endeksi-haritas/</loc>
     <lastmod>2020-07-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/rstudio-da-xlsx-dosyas-olu-turmak/</loc>
+    <loc>https://projectmayhem.netlify.app/post/rstudio-da-xlsx-dosyas-olu-turmak/</loc>
     <lastmod>2020-07-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/xlsx/</loc>
+    <loc>https://projectmayhem.netlify.app/tags/xlsx/</loc>
     <lastmod>2020-07-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/hakk-mda/</loc>
+    <loc>https://projectmayhem.netlify.app/post/hakk-mda/</loc>
     <lastmod>2020-06-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/test/</loc>
+    <loc>https://projectmayhem.netlify.app/tags/test/</loc>
     <lastmod>2020-06-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/creating-a-new-theme/</loc>
+    <loc>https://projectmayhem.netlify.app/posts/creating-a-new-theme/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/hugo/</loc>
+    <loc>https://projectmayhem.netlify.app/tags/hugo/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/themes/</loc>
+    <loc>https://projectmayhem.netlify.app/tags/themes/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/goisforlovers/</loc>
+    <loc>https://projectmayhem.netlify.app/posts/goisforlovers/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/configuration/</loc>
+    <loc>https://projectmayhem.netlify.app/tags/configuration/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/development/</loc>
+    <loc>https://projectmayhem.netlify.app/tags/development/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/docs/</loc>
+    <loc>https://projectmayhem.netlify.app/tags/docs/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/hugoisforlovers/</loc>
+    <loc>https://projectmayhem.netlify.app/posts/hugoisforlovers/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/go/</loc>
+    <loc>https://projectmayhem.netlify.app/tags/go/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/golang/</loc>
+    <loc>https://projectmayhem.netlify.app/tags/golang/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/templates/</loc>
+    <loc>https://projectmayhem.netlify.app/tags/templates/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/tutorial/</loc>
+    <loc>https://projectmayhem.netlify.app/tags/tutorial/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/jekyll/</loc>
+    <loc>https://projectmayhem.netlify.app/tags/jekyll/</loc>
     <lastmod>2014-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/migrate-from-jekyll/</loc>
+    <loc>https://projectmayhem.netlify.app/posts/migrate-from-jekyll/</loc>
     <lastmod>2014-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/test-8/</loc>
+    <loc>https://projectmayhem.netlify.app/posts/test-8/</loc>
     <lastmod>1012-01-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/test-7/</loc>
+    <loc>https://projectmayhem.netlify.app/posts/test-7/</loc>
     <lastmod>1012-01-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/test-6/</loc>
+    <loc>https://projectmayhem.netlify.app/posts/test-6/</loc>
     <lastmod>1012-01-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/test-5/</loc>
+    <loc>https://projectmayhem.netlify.app/posts/test-5/</loc>
     <lastmod>1012-01-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/test-4/</loc>
+    <loc>https://projectmayhem.netlify.app/posts/test-4/</loc>
     <lastmod>1012-01-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/test-3/</loc>
+    <loc>https://projectmayhem.netlify.app/posts/test-3/</loc>
     <lastmod>1012-01-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/test-2/</loc>
+    <loc>https://projectmayhem.netlify.app/posts/test-2/</loc>
     <lastmod>1012-01-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/test-1/</loc>
+    <loc>https://projectmayhem.netlify.app/posts/test-1/</loc>
     <lastmod>1012-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/2015-07-23-r-rmarkdown/</loc>
+    <loc>https://projectmayhem.netlify.app/post/2015-07-23-r-rmarkdown/</loc>
   </url>
   
   <url>
-    <loc>/tags/plot/</loc>
+    <loc>https://projectmayhem.netlify.app/tags/plot/</loc>
   </url>
   
   <url>
-    <loc>/tags/r-markdown/</loc>
+    <loc>https://projectmayhem.netlify.app/tags/r-markdown/</loc>
   </url>
   
   <url>
-    <loc>/tags/regression/</loc>
+    <loc>https://projectmayhem.netlify.app/tags/regression/</loc>
   </url>
   
 </urlset>

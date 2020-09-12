@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>r on R &amp; Analiz</title>
-    <link>/tags/r/</link>
+    <link>https://projectmayhem.netlify.app/tags/r/</link>
     <description>Recent content in r on R &amp; Analiz</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 19 Jul 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://projectmayhem.netlify.app/tags/r/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Türkiye Mutluluk Endeksi Haritası</title>
-      <link>/post/t%C3%BCrkiye-mutluluk-endeksi-haritas/</link>
+      <link>https://projectmayhem.netlify.app/post/t%C3%BCrkiye-mutluluk-endeksi-haritas/</link>
       <pubDate>Sun, 19 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/t%C3%BCrkiye-mutluluk-endeksi-haritas/</guid>
+      <guid>https://projectmayhem.netlify.app/post/t%C3%BCrkiye-mutluluk-endeksi-haritas/</guid>
       <description>packages install.packages(&amp;ldquo;tidyverse&amp;rdquo;) install.packages(&amp;ldquo;sp&amp;rdquo;) # for spatial data install.packages(&amp;ldquo;map&amp;rdquo;) install.packages(&amp;ldquo;mapproj&amp;rdquo;) install.packages(&amp;ldquo;ggmap&amp;rdquo;) install.packages(&amp;ldquo;DeducerSpatial&amp;rdquo;) install.packages(&amp;ldquo;maps&amp;rdquo;)
 help(package = &amp;ldquo;maps&amp;rdquo;)
 Loading required package: maps require(maps)

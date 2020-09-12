@@ -2,39 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R on R &amp; Analiz</title>
-    <link>/categories/r/</link>
+    <link>https://projectmayhem.netlify.app/categories/r/</link>
     <description>Recent content in R on R &amp; Analiz</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 05 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 12 Sep 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://projectmayhem.netlify.app/categories/r/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Contingency</title>
-      <link>/posts/contingency/</link>
+      <title>Frequency Tables</title>
+      <link>https://projectmayhem.netlify.app/posts/frequency-tables/</link>
+      <pubDate>Sat, 12 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://projectmayhem.netlify.app/posts/frequency-tables/</guid>
+      <description>#Import dataset (code below only works if file is in working directory)
+med &amp;lt;- read.csv(&amp;#39;https://raw.githubusercontent.com/fabricandofitfaber/mayhem/master/MedicalData.csv&amp;#39;)#Create and view frequency table of age groups
+agetab &amp;lt;- table(med$Age)agetab## ## adult older adult young adult ## 99 27 29#View table proportions
+prop.table(agetab)## ## adult older adult young adult ## 0.6387097 0.1741935 0.1870968#Create bar chart
+barplot(agetab,main=&amp;#39;Age Distribution&amp;#39;,xlab=&amp;#39;Age Group&amp;#39;,ylab=&amp;#39;Frequency&amp;#39;,ylim=c(0,100))#Re-order age categories
+med$Age &amp;lt;- factor(med$Age, levels=c(&amp;#39;young adult&amp;#39;,&amp;#39;adult&amp;#39;,&amp;#39;older adult&amp;#39;))#Re-run bar chart</description>
+    </item>
+    
+    <item>
+      <title>Contingency Tables</title>
+      <link>https://projectmayhem.netlify.app/post/contingency-tables/</link>
       <pubDate>Sat, 05 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>/posts/contingency/</guid>
+      <guid>https://projectmayhem.netlify.app/post/contingency-tables/</guid>
       <description>Import datasetpost &amp;lt;- read.csv(&amp;#39;https://raw.githubusercontent.com/fabricandofitfaber/mayhem/master/PostSurvey.csv&amp;#39;)Create contingency tablegendsport &amp;lt;- table(post$UT_sport, post$gender)gendsport## ## Female Male## no 150 16## yes 40 8Row percentagesprop.table(gendsport,1)## ## Female Male## no 0.90361446 0.09638554## yes 0.83333333 0.16666667Column percentagesprop.table(gendsport,2)## ## Female Male## no 0.7894737 0.6666667## yes 0.2105263 0.3333333Make grouped bar chartbarplot(gendsport,beside=T,legend=T,main=&amp;#39;Play Sports by Gender&amp;#39;, xlab=&amp;#39;Gender&amp;#39;,ylab=&amp;#39;Frequency&amp;#39;)Make mosaic plotbarplot(prop.</description>
     </item>
     
     <item>
       <title>Numberology</title>
-      <link>/posts/numberology/</link>
+      <link>https://projectmayhem.netlify.app/posts/numberology/</link>
       <pubDate>Sun, 30 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>/posts/numberology/</guid>
+      <guid>https://projectmayhem.netlify.app/posts/numberology/</guid>
       <description>title: &amp;lsquo;Numberology&amp;rsquo; author: fabricandofitfaber date: &amp;lsquo;2020-08-30&amp;rsquo; slug: &#39;&amp;rsquo; categories:
  R tags: plot R Markdown Description: &#39;&amp;rsquo; Tags: [tidyverse] Categories: [R] DisableComments: no   https://gofile.io/d/OIeaLH (Veri Seti) colnames(umf)[1] &amp;lt;- &amp;quot;ID&amp;quot;colnames(umf)[2] &amp;lt;- &amp;quot;Number100&amp;quot;colnames(umf)[4] &amp;lt;- &amp;quot;L_M&amp;quot;library(tidyverse) umf %&amp;gt;%ggplot(aes(value)) +geom_histogram(binwidth=.5, colour=&amp;quot;red&amp;quot;, fill=&amp;quot;grey&amp;quot;) +theme(axis.text.x = element_text(angle = 90, vjust = 0.5)) +scale_x_continuous(breaks = umf$value)umf %&amp;gt;%ggplot(aes(value, color_class)) +geom_line(alpha = .5, color = &amp;quot;gray&amp;quot;) +geom_point(aes(color = factor(color_class))) +geom_text(aes(label = color_class), hjust = 1,check_overlap = TRUE) +theme(legend.</description>
     </item>
     
     <item>
       <title>RStudio&#39;da .xlsx Dosyası Oluşturmak</title>
-      <link>/post/rstudio-da-xlsx-dosyas-olu-turmak/</link>
+      <link>https://projectmayhem.netlify.app/post/rstudio-da-xlsx-dosyas-olu-turmak/</link>
       <pubDate>Sun, 12 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/rstudio-da-xlsx-dosyas-olu-turmak/</guid>
+      <guid>https://projectmayhem.netlify.app/post/rstudio-da-xlsx-dosyas-olu-turmak/</guid>
       <description>library(openxlsx)
 workbook &amp;lt;- createWorkbook()
 addWorksheet(workbook, &amp;ldquo;birinci_sayfa&amp;rdquo;) addWorksheet(workbook, &amp;ldquo;ikinci_sayfa&amp;rdquo;)
@@ -44,10 +58,10 @@ saveWorkbook(workbook, file = &amp;ldquo;my_workbook.xlsx&amp;rdquo;, overwrite 
     
     <item>
       <title>Hakkımda</title>
-      <link>/post/hakk-mda/</link>
+      <link>https://projectmayhem.netlify.app/post/hakk-mda/</link>
       <pubDate>Mon, 22 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/hakk-mda/</guid>
+      <guid>https://projectmayhem.netlify.app/post/hakk-mda/</guid>
       <description>Başlık 1Burada editliyoruz yazıyı
 Başlık 2Burada kodlar verilir.
 mydata &amp;lt;- mtcarsplot(mtcars)</description>
@@ -55,10 +69,10 @@ mydata &amp;lt;- mtcarsplot(mtcars)</description>
     
     <item>
       <title>Hello R Markdown</title>
-      <link>/post/2015-07-23-r-rmarkdown/</link>
+      <link>https://projectmayhem.netlify.app/post/2015-07-23-r-rmarkdown/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/post/2015-07-23-r-rmarkdown/</guid>
+      <guid>https://projectmayhem.netlify.app/post/2015-07-23-r-rmarkdown/</guid>
       <description>R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
 You can embed an R code chunk like this:
 summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
