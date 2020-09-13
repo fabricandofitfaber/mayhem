@@ -5,19 +5,10 @@
     <link>https://projectmayhem.netlify.app/post/</link>
     <description>Recent content in Posts on R &amp; Analiz</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 13 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 12 Sep 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://projectmayhem.netlify.app/post/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Grouped Histograms</title>
-      <link>https://projectmayhem.netlify.app/post/grouped-histograms/</link>
-      <pubDate>Sun, 13 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://projectmayhem.netlify.app/post/grouped-histograms/</guid>
-      <description>Import dataset (code below only works if file is in working directory)med &amp;lt;- read.csv(&amp;#39;https://raw.githubusercontent.com/fabricandofitfaber/mayhem/master/MedicalData.csv&amp;#39;)Calculate measures of center (mean, median)mean(med$BMI)## [1] 32.91226median(med$BMI)## [1] 31.6Calculate measures of spread (standard deviation, 5# summary)sd(med$BMI)## [1] 7.308377fivenum(med$BMI)## [1] 19.40 27.95 31.60 37.00 55.20Create histogramhist(med$BMI,main=&amp;#39;Distribution of BMI&amp;#39;,xlab=&amp;#39;BMI&amp;#39;,right=F)Change number of bins in histogramhist(med$BMI,main=&amp;#39;Distribution of BMI&amp;#39;,xlab=&amp;#39;BMI&amp;#39;,right=F,breaks=15)Create boxplotboxplot(med$BMI,main=&amp;#39;Distribution of BMI&amp;#39;,ylab=&amp;#39;BMI&amp;#39;)</description>
-    </item>
     
     <item>
       <title>Frequency Tables</title>

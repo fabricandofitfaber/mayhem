@@ -18,22 +18,12 @@
   </url>
   
   <url>
-    <loc>https://projectmayhem.netlify.app/post/grouped-histograms/</loc>
-    <lastmod>2020-09-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://projectmayhem.netlify.app/posts/grouped-histograms/</loc>
     <lastmod>2020-09-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://projectmayhem.netlify.app/posts/</loc>
-    <lastmod>2020-09-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://projectmayhem.netlify.app/post/</loc>
     <lastmod>2020-09-13T00:00:00+00:00</lastmod>
   </url>
   
@@ -74,6 +64,11 @@
   
   <url>
     <loc>https://projectmayhem.netlify.app/tags/pie-chart/</loc>
+    <lastmod>2020-09-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://projectmayhem.netlify.app/post/</loc>
     <lastmod>2020-09-12T00:00:00+00:00</lastmod>
   </url>
   
