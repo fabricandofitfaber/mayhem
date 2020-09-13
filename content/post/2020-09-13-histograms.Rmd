@@ -32,3 +32,7 @@ hist(BMI_no,main='Distribution of BMI',xlab='BMI',right=F,xlim=c(15,60),col='#00
 hist(BMI_yes,right=F,add=T,col='#B2222275')
 ```
 
+## Add legend
+```{r}
+legend('topright',title='Diabetic Status',c('No','Yes'),fill=c('#0000FF75','#B2222275'))
+```
