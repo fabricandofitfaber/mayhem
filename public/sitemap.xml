@@ -23,7 +23,22 @@
   </url>
   
   <url>
+    <loc>https://projectmayhem.netlify.app/tags/histograms/</loc>
+    <lastmod>2020-09-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://projectmayhem.netlify.app/post/histograms/</loc>
+    <lastmod>2020-09-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://projectmayhem.netlify.app/posts/</loc>
+    <lastmod>2020-09-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://projectmayhem.netlify.app/post/</loc>
     <lastmod>2020-09-13T00:00:00+00:00</lastmod>
   </url>
   
@@ -59,11 +74,6 @@
   
   <url>
     <loc>https://projectmayhem.netlify.app/tags/pie-chart/</loc>
-    <lastmod>2020-09-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://projectmayhem.netlify.app/post/</loc>
     <lastmod>2020-09-12T00:00:00+00:00</lastmod>
   </url>
   
@@ -195,26 +205,6 @@
   <url>
     <loc>https://projectmayhem.netlify.app/posts/migrate-from-jekyll/</loc>
     <lastmod>2014-03-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://projectmayhem.netlify.app/posts/test-5/</loc>
-    <lastmod>1012-01-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://projectmayhem.netlify.app/posts/test-4/</loc>
-    <lastmod>1012-01-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://projectmayhem.netlify.app/posts/test-3/</loc>
-    <lastmod>1012-01-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://projectmayhem.netlify.app/posts/test-2/</loc>
-    <lastmod>1012-01-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>

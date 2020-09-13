@@ -22,42 +22,6 @@ mydata &amp;lt;- mtcarsplot(mtcars)</description>
     </item>
     
     <item>
-      <title>Test 5</title>
-      <link>https://projectmayhem.netlify.app/posts/test-5/</link>
-      <pubDate>Sun, 05 Jan 1012 00:00:00 +0000</pubDate>
-      
-      <guid>https://projectmayhem.netlify.app/posts/test-5/</guid>
-      <description>Test 5</description>
-    </item>
-    
-    <item>
-      <title>Test 4</title>
-      <link>https://projectmayhem.netlify.app/posts/test-4/</link>
-      <pubDate>Sat, 04 Jan 1012 00:00:00 +0000</pubDate>
-      
-      <guid>https://projectmayhem.netlify.app/posts/test-4/</guid>
-      <description>Test 4</description>
-    </item>
-    
-    <item>
-      <title>Test 3</title>
-      <link>https://projectmayhem.netlify.app/posts/test-3/</link>
-      <pubDate>Fri, 03 Jan 1012 00:00:00 +0000</pubDate>
-      
-      <guid>https://projectmayhem.netlify.app/posts/test-3/</guid>
-      <description>Test 3</description>
-    </item>
-    
-    <item>
-      <title>Test 2</title>
-      <link>https://projectmayhem.netlify.app/posts/test-2/</link>
-      <pubDate>Thu, 02 Jan 1012 00:00:00 +0000</pubDate>
-      
-      <guid>https://projectmayhem.netlify.app/posts/test-2/</guid>
-      <description>Test 2</description>
-    </item>
-    
-    <item>
       <title>Test 1</title>
       <link>https://projectmayhem.netlify.app/posts/test-1/</link>
       <pubDate>Wed, 01 Jan 1012 00:00:00 +0000</pubDate>
