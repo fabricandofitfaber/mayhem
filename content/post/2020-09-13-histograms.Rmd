@@ -1,0 +1,38 @@
+---
+title: Histograms
+author: fabricandofitfaber
+date: '2020-09-13'
+slug: histograms
+categories:
+  - Descriptive Statistics and Displays
+  - R
+tags:
+  - Histograms
+---
+
+## Import dataset (code below only works if file is in working directory)
+```{r}
+med <- read.csv('https://raw.githubusercontent.com/fabricandofitfaber/mayhem/master/MedicalData.csv')
+```
+
+## Create Grouped Boxplot
+```{r}
+boxplot(med$BMI~med$Diabetic,main='Distribution of BMI',xlab='Diabetic Status',ylab='BMI',names=c('No','Yes'))
+```
+
+## Create subsets of BMI values based on diabetic status
+```{r}
+BMI_no <- med$BMI[med$Diabetic==0]
+BMI_yes <- med$BMI[med$Diabetic==1]
+```
+
+## Create grouped histogram
+```{r}
+hist(BMI_no,main='Distribution of BMI',xlab='BMI',right=F,xlim=c(15,60),col='#0000FF75')
+hist(BMI_yes,right=F,add=T,col='#B2222275')
+```
+
+## Add legend
+```{r}
+legend('topright',title='Diabetic Status',c('No','Yes'),fill=c('#0000FF75','#B2222275'))
+```
