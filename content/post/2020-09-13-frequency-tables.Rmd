@@ -12,33 +12,33 @@ tags:
   - Grouped Bar Charts
 ---
 
-# Import dataset (code below only works if file is in working directory)
+## Import dataset (code below only works if file is in working directory)
 ```{r}
 med <- read.csv('https://raw.githubusercontent.com/fabricandofitfaber/mayhem/master/MedicalData.csv')
 ```
 
-# Create and view frequency table of age groups
+## Create and view frequency table of age groups
 ```{r}
 agetab <- table(med$Age)
 agetab
 ```
 
-# View table proportions
+## View table proportions
 ```{r}
 prop.table(agetab)
 ```
 
-# Create bar chart
+## Create bar chart
 ```{r}
 barplot(agetab,main='Age Distribution',xlab='Age Group',ylab='Frequency',ylim=c(0,100))
 ```
 
-# Re-order age categories
+## Re-order age categories
 ```{r}
 med$Age <- factor(med$Age, levels=c('young adult','adult','older adult'))
 ```
 
-# Re-run bar chart
+## Re-run bar chart
 ```{r}
 agetab <- table(med$Age)
 barplot(agetab,main='Age Distribution',xlab='Age Group',ylab='Frequency',ylim=c(0,100))
