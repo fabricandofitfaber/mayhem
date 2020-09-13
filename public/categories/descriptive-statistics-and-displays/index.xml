@@ -29,20 +29,6 @@
     </item>
     
     <item>
-      <title>Frequency Tables</title>
-      <link>https://projectmayhem.netlify.app/posts/frequency-tables/</link>
-      <pubDate>Sat, 12 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://projectmayhem.netlify.app/posts/frequency-tables/</guid>
-      <description>#Import dataset (code below only works if file is in working directory)
-med &amp;lt;- read.csv(&amp;#39;https://raw.githubusercontent.com/fabricandofitfaber/mayhem/master/MedicalData.csv&amp;#39;)#Create and view frequency table of age groups
-agetab &amp;lt;- table(med$Age)agetab## ## adult older adult young adult ## 99 27 29#View table proportions
-prop.table(agetab)## ## adult older adult young adult ## 0.6387097 0.1741935 0.1870968#Create bar chart
-barplot(agetab,main=&amp;#39;Age Distribution&amp;#39;,xlab=&amp;#39;Age Group&amp;#39;,ylab=&amp;#39;Frequency&amp;#39;,ylim=c(0,100))#Re-order age categories
-med$Age &amp;lt;- factor(med$Age, levels=c(&amp;#39;young adult&amp;#39;,&amp;#39;adult&amp;#39;,&amp;#39;older adult&amp;#39;))#Re-run bar chart</description>
-    </item>
-    
-    <item>
       <title>Contingency Tables</title>
       <link>https://projectmayhem.netlify.app/post/contingency-tables/</link>
       <pubDate>Sat, 05 Sep 2020 00:00:00 +0000</pubDate>
