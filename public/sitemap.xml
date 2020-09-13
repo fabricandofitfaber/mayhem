@@ -4,16 +4,61 @@
   
   <url>
     <loc>https://projectmayhem.netlify.app/categories/</loc>
-    <lastmod>2020-09-12T00:00:00+00:00</lastmod>
+    <lastmod>2020-09-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://projectmayhem.netlify.app/categories/descriptive-statistics-and-displays/</loc>
-    <lastmod>2020-09-12T00:00:00+00:00</lastmod>
+    <lastmod>2020-09-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://projectmayhem.netlify.app/tags/grouped-histograms/</loc>
+    <lastmod>2020-09-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://projectmayhem.netlify.app/post/grouped-histograms/</loc>
+    <lastmod>2020-09-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://projectmayhem.netlify.app/posts/grouped-histograms/</loc>
+    <lastmod>2020-09-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://projectmayhem.netlify.app/posts/</loc>
+    <lastmod>2020-09-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://projectmayhem.netlify.app/post/</loc>
+    <lastmod>2020-09-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://projectmayhem.netlify.app/categories/r/</loc>
+    <lastmod>2020-09-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://projectmayhem.netlify.app/</loc>
+    <lastmod>2020-09-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://projectmayhem.netlify.app/tags/</loc>
+    <lastmod>2020-09-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://projectmayhem.netlify.app/tags/frequency-tables/</loc>
+    <lastmod>2020-09-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://projectmayhem.netlify.app/post/frequency-tables/</loc>
     <lastmod>2020-09-12T00:00:00+00:00</lastmod>
   </url>
   
@@ -33,26 +78,6 @@
   </url>
   
   <url>
-    <loc>https://projectmayhem.netlify.app/posts/</loc>
-    <lastmod>2020-09-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://projectmayhem.netlify.app/categories/r/</loc>
-    <lastmod>2020-09-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://projectmayhem.netlify.app/</loc>
-    <lastmod>2020-09-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://projectmayhem.netlify.app/tags/</loc>
-    <lastmod>2020-09-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://projectmayhem.netlify.app/tags/contingency-tables/</loc>
     <lastmod>2020-09-05T00:00:00+00:00</lastmod>
   </url>
@@ -64,11 +89,6 @@
   
   <url>
     <loc>https://projectmayhem.netlify.app/tags/grouped-pie-charts/</loc>
-    <lastmod>2020-09-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://projectmayhem.netlify.app/post/</loc>
     <lastmod>2020-09-05T00:00:00+00:00</lastmod>
   </url>
   
