@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>descriptive statistics on R &amp; Analiz</title>
-    <link>https://projectmayhem.netlify.app/tags/descriptive-statistics/</link>
-    <description>Recent content in descriptive statistics on R &amp; Analiz</description>
+    <title>Numeric Descriptives on R &amp; Analiz</title>
+    <link>https://projectmayhem.netlify.app/tags/numeric-descriptives/</link>
+    <description>Recent content in Numeric Descriptives on R &amp; Analiz</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 27 Sep 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://projectmayhem.netlify.app/tags/descriptive-statistics/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://projectmayhem.netlify.app/tags/numeric-descriptives/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
