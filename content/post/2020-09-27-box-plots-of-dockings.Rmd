@@ -13,8 +13,8 @@ tags:
 
 
 ```{r}
-install.packages("tidyverse")
-install.packages("ggplot2")
+# install.packages("tidyverse")
+# install.packages("ggplot2")
 
 library(tidyverse)
 library(ggplot2)
