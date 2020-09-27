@@ -1,5 +1,5 @@
 ---
-title: histograms
+title: Histograms
 author: fabricandofitfaber
 date: '2020-09-27'
 slug: histograms
