@@ -2,12 +2,12 @@
 title: Histograms
 author: fabricandofitfaber
 date: '2020-09-27'
-slug: histograms
+slug: Histograms
 categories:
   - Descriptive Statistics and Displays
   - R
 tags:
-  - histograms
+  - Histograms
 ---
 
 ## Import dataset (code below only works if file is in working directory)
