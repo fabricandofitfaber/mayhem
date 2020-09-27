@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>histograms on R &amp; Analiz</title>
+    <title>Histograms on R &amp; Analiz</title>
     <link>https://projectmayhem.netlify.app/tags/histograms/</link>
-    <description>Recent content in histograms on R &amp; Analiz</description>
+    <description>Recent content in Histograms on R &amp; Analiz</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 27 Sep 2020 00:00:00 +0000</lastBuildDate>
     
@@ -11,7 +11,7 @@
     
     
     <item>
-      <title>histograms</title>
+      <title>Histograms</title>
       <link>https://projectmayhem.netlify.app/post/histograms/</link>
       <pubDate>Sun, 27 Sep 2020 00:00:00 +0000</pubDate>
       
