@@ -31,4 +31,3 @@ BMI_yes <- med$BMI[med$Diabetic==1]
 hist(BMI_no,main='Distribution of BMI',xlab='BMI',right=F,xlim=c(15,60),col='#0000FF75')
 hist(BMI_yes,right=F,add=T,col='#B2222275')
 ```
-
