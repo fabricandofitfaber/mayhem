@@ -12,21 +12,34 @@ tags:
 ---
 
 #Import dataset (code below only works if file is in working directory)
-med <- read.csv('MedicalData.csv')
+```{r}
+med <- read.csv('https://raw.githubusercontent.com/fabricandofitfaber/mayhem/master/MedicalData.csv')
+```
 
 #Calculate measures of center (mean, median)
+```{r}
 mean(med$BMI)
 median(med$BMI)
+```
+
 
 #Calculate measures of spread (standard deviation, 5# summary)
+```{r}
 sd(med$BMI)
 fivenum(med$BMI)
+```
 
 #Create histogram
+```{r}
 hist(med$BMI,main='Distribution of BMI',xlab='BMI',right=F)
+```
 
 #Change number of bins in histogram
+```{r}
 hist(med$BMI,main='Distribution of BMI',xlab='BMI',right=F,breaks=15)
+```
 
 #Create boxplot
+```{r}
 boxplot(med$BMI,main='Distribution of BMI',ylab='BMI')
+```
