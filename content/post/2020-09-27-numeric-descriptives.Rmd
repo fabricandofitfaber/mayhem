@@ -1,0 +1,32 @@
+---
+title: Numeric Descriptives
+author: fabricandofitfaber
+date: '2020-09-27'
+slug: numeric-descriptives
+categories:
+  - Descriptive Statistics and Displays
+  - R
+tags:
+  - Numeric Descriptives
+  - descriptive statistics
+---
+
+#Import dataset (code below only works if file is in working directory)
+med <- read.csv('MedicalData.csv')
+
+#Calculate measures of center (mean, median)
+mean(med$BMI)
+median(med$BMI)
+
+#Calculate measures of spread (standard deviation, 5# summary)
+sd(med$BMI)
+fivenum(med$BMI)
+
+#Create histogram
+hist(med$BMI,main='Distribution of BMI',xlab='BMI',right=F)
+
+#Change number of bins in histogram
+hist(med$BMI,main='Distribution of BMI',xlab='BMI',right=F,breaks=15)
+
+#Create boxplot
+boxplot(med$BMI,main='Distribution of BMI',ylab='BMI')
