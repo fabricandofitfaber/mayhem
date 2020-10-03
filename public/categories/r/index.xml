@@ -16,7 +16,7 @@
       <pubDate>Sun, 27 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>https://projectmayhem.netlify.app/post/histograms/</guid>
-      <description>Import dataset (code below only works if file is in working directory)med &amp;lt;- read.csv(&amp;#39;https://raw.githubusercontent.com/fabricandofitfaber/mayhem/master/MedicalData.csv&amp;#39;)Create Grouped Boxplotboxplot(med$BMI~med$Diabetic,main=&amp;#39;Distribution of BMI&amp;#39;,xlab=&amp;#39;Diabetic Status&amp;#39;,ylab=&amp;#39;BMI&amp;#39;,names=c(&amp;#39;No&amp;#39;,&amp;#39;Yes&amp;#39;))Create subsets of BMI values based on diabetic statusBMI_no &amp;lt;- med$BMI[med$Diabetic==0]BMI_yes &amp;lt;- med$BMI[med$Diabetic==1]Create grouped histogramhist(BMI_no,main=&amp;#39;Distribution of BMI&amp;#39;,xlab=&amp;#39;BMI&amp;#39;,right=F,xlim=c(15,60),col=&amp;#39;#0000FF75&amp;#39;)hist(BMI_yes,right=F,add=T,col=&amp;#39;#B2222275&amp;#39;)</description>
+      <description>Import dataset (code below only works if file is in working directory)med &amp;lt;- read.csv(&amp;#39;https://raw.githubusercontent.com/fabricandofitfaber/mayhem/master/MedicalData.csv&amp;#39;)Create Grouped Boxplotboxplot(med$BMI~med$Diabetic,main=&amp;#39;Distribution of BMI&amp;#39;,xlab=&amp;#39;Diabetic Status&amp;#39;,ylab=&amp;#39;BMI&amp;#39;,names=c(&amp;#39;No&amp;#39;,&amp;#39;Yes&amp;#39;))Create subsets of BMI values based on diabetic statusBMI_no &amp;lt;- med$BMI[med$Diabetic==0]BMI_yes &amp;lt;- med$BMI[med$Diabetic==1]Create grouped histogramhist(BMI_no,main=&amp;#39;Distribution of BMI&amp;#39;,xlab=&amp;#39;BMI&amp;#39;,right=F,xlim=c(15,60),col=&amp;#39;#0000FF75&amp;#39;)hist(BMI_yes,right=F,add=T,col=&amp;#39;#B2222275&amp;#39;)</description>
     </item>
     
     <item>
@@ -25,7 +25,7 @@
       <pubDate>Sun, 27 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>https://projectmayhem.netlify.app/post/numeric-descriptives/</guid>
-      <description>#Import dataset (code below only works if file is in working directory)
+      <description>#Import dataset (code below only works if file is in working directory)
 med &amp;lt;- read.csv(&amp;#39;https://raw.githubusercontent.com/fabricandofitfaber/mayhem/master/MedicalData.csv&amp;#39;)#Calculate measures of center (mean, median)
 mean(med$BMI)## [1] 32.91226median(med$BMI)## [1] 31.6#Calculate measures of spread (standard deviation, 5# summary)
 sd(med$BMI)## [1] 7.308377fivenum(med$BMI)## [1] 19.40 27.95 31.60 37.00 55.20#Create histogram
@@ -40,7 +40,7 @@ boxplot(med$BMI,main=&amp;#39;Distribution of BMI&amp;#39;,ylab=&amp;#39;BMI&amp
       <pubDate>Sun, 13 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>https://projectmayhem.netlify.app/posts/grouped-histograms/</guid>
-      <description>Import dataset (code below only works if file is in working directory)med &amp;lt;- read.csv(&amp;#39;https://raw.githubusercontent.com/fabricandofitfaber/mayhem/master/MedicalData.csv&amp;#39;)Calculate measures of center (mean, median)mean(med$BMI)## [1] 32.91226median(med$BMI)## [1] 31.6Calculate measures of spread (standard deviation, 5# summary)sd(med$BMI)## [1] 7.308377fivenum(med$BMI)## [1] 19.40 27.95 31.60 37.00 55.20Create histogramhist(med$BMI,main=&amp;#39;Distribution of BMI&amp;#39;,xlab=&amp;#39;BMI&amp;#39;,right=F)Change number of bins in histogramhist(med$BMI,main=&amp;#39;Distribution of BMI&amp;#39;,xlab=&amp;#39;BMI&amp;#39;,right=F,breaks=15)Create boxplotboxplot(med$BMI,main=&amp;#39;Distribution of BMI&amp;#39;,ylab=&amp;#39;BMI&amp;#39;)</description>
+      <description>Import dataset (code below only works if file is in working directory)med &amp;lt;- read.csv(&amp;#39;https://raw.githubusercontent.com/fabricandofitfaber/mayhem/master/MedicalData.csv&amp;#39;)Calculate measures of center (mean, median)mean(med$BMI)## [1] 32.91226median(med$BMI)## [1] 31.6Calculate measures of spread (standard deviation, 5# summary)sd(med$BMI)## [1] 7.308377fivenum(med$BMI)## [1] 19.40 27.95 31.60 37.00 55.20Create histogramhist(med$BMI,main=&amp;#39;Distribution of BMI&amp;#39;,xlab=&amp;#39;BMI&amp;#39;,right=F)Change number of bins in histogramhist(med$BMI,main=&amp;#39;Distribution of BMI&amp;#39;,xlab=&amp;#39;BMI&amp;#39;,right=F,breaks=15)Create boxplotboxplot(med$BMI,main=&amp;#39;Distribution of BMI&amp;#39;,ylab=&amp;#39;BMI&amp;#39;)</description>
     </item>
     
     <item>
@@ -49,7 +49,7 @@ boxplot(med$BMI,main=&amp;#39;Distribution of BMI&amp;#39;,ylab=&amp;#39;BMI&amp
       <pubDate>Sat, 12 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>https://projectmayhem.netlify.app/post/frequency-tables/</guid>
-      <description>Import dataset (code below only works if file is in working directory)med &amp;lt;- read.csv(&amp;#39;https://raw.githubusercontent.com/fabricandofitfaber/mayhem/master/MedicalData.csv&amp;#39;)Create and view frequency table of age groupsagetab &amp;lt;- table(med$Age)agetab## ## adult older adult young adult ## 99 27 29View table proportionsprop.table(agetab)## ## adult older adult young adult ## 0.6387097 0.1741935 0.1870968Create bar chartbarplot(agetab,main=&amp;#39;Age Distribution&amp;#39;,xlab=&amp;#39;Age Group&amp;#39;,ylab=&amp;#39;Frequency&amp;#39;,ylim=c(0,100))Re-order age categoriesmed$Age &amp;lt;- factor(med$Age, levels=c(&amp;#39;young adult&amp;#39;,&amp;#39;adult&amp;#39;,&amp;#39;older adult&amp;#39;))Re-run bar chartagetab &amp;lt;- table(med$Age)barplot(agetab,main=&amp;#39;Age Distribution&amp;#39;,xlab=&amp;#39;Age Group&amp;#39;,ylab=&amp;#39;Frequency&amp;#39;,ylim=c(0,100))</description>
+      <description>Import dataset (code below only works if file is in working directory)med &amp;lt;- read.csv(&amp;#39;https://raw.githubusercontent.com/fabricandofitfaber/mayhem/master/MedicalData.csv&amp;#39;)Create and view frequency table of age groupsagetab &amp;lt;- table(med$Age)agetab## ## adult older adult young adult ## 99 27 29View table proportionsprop.table(agetab)## ## adult older adult young adult ## 0.6387097 0.1741935 0.1870968Create bar chartbarplot(agetab,main=&amp;#39;Age Distribution&amp;#39;,xlab=&amp;#39;Age Group&amp;#39;,ylab=&amp;#39;Frequency&amp;#39;,ylim=c(0,100))Re-order age categoriesmed$Age &amp;lt;- factor(med$Age, levels=c(&amp;#39;young adult&amp;#39;,&amp;#39;adult&amp;#39;,&amp;#39;older adult&amp;#39;))Re-run bar chartagetab &amp;lt;- table(med$Age)barplot(agetab,main=&amp;#39;Age Distribution&amp;#39;,xlab=&amp;#39;Age Group&amp;#39;,ylab=&amp;#39;Frequency&amp;#39;,ylim=c(0,100))</description>
     </item>
     
     <item>
@@ -90,7 +90,7 @@ saveWorkbook(workbook, file = &amp;ldquo;my_workbook.xlsx&amp;rdquo;, overwrite 
       <pubDate>Mon, 22 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://projectmayhem.netlify.app/post/hakk-mda/</guid>
-      <description>Başlık 1Burada editliyoruz yazıyı
+      <description>Başlık 1Burada editliyoruz yazıyı
 Başlık 2Burada kodlar verilir.
 mydata &amp;lt;- mtcarsplot(mtcars)</description>
     </item>
@@ -103,7 +103,7 @@ mydata &amp;lt;- mtcarsplot(mtcars)</description>
       <guid>https://projectmayhem.netlify.app/post/2015-07-23-r-rmarkdown/</guid>
       <description>R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
 You can embed an R code chunk like this:
-summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
+summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.</description>
     </item>
     
   </channel>

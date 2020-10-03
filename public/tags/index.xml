@@ -5,10 +5,46 @@
     <link>https://projectmayhem.netlify.app/tags/</link>
     <description>Recent content in Tags on R &amp; Analiz</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 27 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://projectmayhem.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Interactive maps</title>
+      <link>https://projectmayhem.netlify.app/tags/interactive-maps/</link>
+      <pubDate>Fri, 02 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://projectmayhem.netlify.app/tags/interactive-maps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mapping</title>
+      <link>https://projectmayhem.netlify.app/tags/mapping/</link>
+      <pubDate>Fri, 02 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://projectmayhem.netlify.app/tags/mapping/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data manipulation</title>
+      <link>https://projectmayhem.netlify.app/tags/data-manipulation/</link>
+      <pubDate>Sun, 27 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://projectmayhem.netlify.app/tags/data-manipulation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data visualization</title>
+      <link>https://projectmayhem.netlify.app/tags/data-visualization/</link>
+      <pubDate>Sun, 27 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://projectmayhem.netlify.app/tags/data-visualization/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>descriptive statistics</title>

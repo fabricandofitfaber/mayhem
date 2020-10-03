@@ -12,10 +12,10 @@
     
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Histograms"/>
-<meta name="twitter:description" content="Import dataset (code below only works if file is in working directory)med &lt;- read.csv(&#39;https://raw.githubusercontent.com/fabricandofitfaber/mayhem/master/MedicalData.csv&#39;)Create Grouped Boxplotboxplot(med$BMI~med$Diabetic,main=&#39;Distribution of BMI&#39;,xlab=&#39;Diabetic Status&#39;,ylab=&#39;BMI&#39;,names=c(&#39;No&#39;,&#39;Yes&#39;))Create subsets of BMI values based on diabetic statusBMI_no &lt;- med$BMI[med$Diabetic==0]BMI_yes &lt;- med$BMI[med$Diabetic==1]Create grouped histogramhist(BMI_no,main=&#39;Distribution of BMI&#39;,xlab=&#39;BMI&#39;,right=F,xlim=c(15,60),col=&#39;#0000FF75&#39;)hist(BMI_yes,right=F,add=T,col=&#39;#B2222275&#39;)"/>
+<meta name="twitter:description" content="Import dataset (code below only works if file is in working directory)med &lt;- read.csv(&#39;https://raw.githubusercontent.com/fabricandofitfaber/mayhem/master/MedicalData.csv&#39;)Create Grouped Boxplotboxplot(med$BMI~med$Diabetic,main=&#39;Distribution of BMI&#39;,xlab=&#39;Diabetic Status&#39;,ylab=&#39;BMI&#39;,names=c(&#39;No&#39;,&#39;Yes&#39;))Create subsets of BMI values based on diabetic statusBMI_no &lt;- med$BMI[med$Diabetic==0]BMI_yes &lt;- med$BMI[med$Diabetic==1]Create grouped histogramhist(BMI_no,main=&#39;Distribution of BMI&#39;,xlab=&#39;BMI&#39;,right=F,xlim=c(15,60),col=&#39;#0000FF75&#39;)hist(BMI_yes,right=F,add=T,col=&#39;#B2222275&#39;)"/>
 
     <meta property="og:title" content="Histograms" />
-<meta property="og:description" content="Import dataset (code below only works if file is in working directory)med &lt;- read.csv(&#39;https://raw.githubusercontent.com/fabricandofitfaber/mayhem/master/MedicalData.csv&#39;)Create Grouped Boxplotboxplot(med$BMI~med$Diabetic,main=&#39;Distribution of BMI&#39;,xlab=&#39;Diabetic Status&#39;,ylab=&#39;BMI&#39;,names=c(&#39;No&#39;,&#39;Yes&#39;))Create subsets of BMI values based on diabetic statusBMI_no &lt;- med$BMI[med$Diabetic==0]BMI_yes &lt;- med$BMI[med$Diabetic==1]Create grouped histogramhist(BMI_no,main=&#39;Distribution of BMI&#39;,xlab=&#39;BMI&#39;,right=F,xlim=c(15,60),col=&#39;#0000FF75&#39;)hist(BMI_yes,right=F,add=T,col=&#39;#B2222275&#39;)" />
+<meta property="og:description" content="Import dataset (code below only works if file is in working directory)med &lt;- read.csv(&#39;https://raw.githubusercontent.com/fabricandofitfaber/mayhem/master/MedicalData.csv&#39;)Create Grouped Boxplotboxplot(med$BMI~med$Diabetic,main=&#39;Distribution of BMI&#39;,xlab=&#39;Diabetic Status&#39;,ylab=&#39;BMI&#39;,names=c(&#39;No&#39;,&#39;Yes&#39;))Create subsets of BMI values based on diabetic statusBMI_no &lt;- med$BMI[med$Diabetic==0]BMI_yes &lt;- med$BMI[med$Diabetic==1]Create grouped histogramhist(BMI_no,main=&#39;Distribution of BMI&#39;,xlab=&#39;BMI&#39;,right=F,xlim=c(15,60),col=&#39;#0000FF75&#39;)hist(BMI_yes,right=F,add=T,col=&#39;#B2222275&#39;)" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://projectmayhem.netlify.app/post/histograms/" />
 <meta property="article:published_time" content="2020-09-27T00:00:00+00:00" />
@@ -70,6 +70,7 @@
     </header>
     <div class="post-content">
       
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
 
 
 <div id="import-dataset-code-below-only-works-if-file-is-in-working-directory" class="section level2">

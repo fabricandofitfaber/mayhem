@@ -4,6 +4,66 @@
   
   <url>
     <loc>https://projectmayhem.netlify.app/categories/</loc>
+    <lastmod>2020-10-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://projectmayhem.netlify.app/tags/interactive-maps/</loc>
+    <lastmod>2020-10-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://projectmayhem.netlify.app/categories/mapping/</loc>
+    <lastmod>2020-10-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://projectmayhem.netlify.app/tags/mapping/</loc>
+    <lastmod>2020-10-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://projectmayhem.netlify.app/post/maps-in-r/</loc>
+    <lastmod>2020-10-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://projectmayhem.netlify.app/post/</loc>
+    <lastmod>2020-10-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://projectmayhem.netlify.app/</loc>
+    <lastmod>2020-10-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://projectmayhem.netlify.app/tags/</loc>
+    <lastmod>2020-10-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://projectmayhem.netlify.app/post/box-plots-of-dockings/</loc>
+    <lastmod>2020-09-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://projectmayhem.netlify.app/tags/data-manipulation/</loc>
+    <lastmod>2020-09-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://projectmayhem.netlify.app/categories/data-manipulation/</loc>
+    <lastmod>2020-09-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://projectmayhem.netlify.app/tags/data-visualization/</loc>
+    <lastmod>2020-09-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://projectmayhem.netlify.app/categories/data-visualization/</loc>
     <lastmod>2020-09-27T00:00:00+00:00</lastmod>
   </url>
   
@@ -38,22 +98,7 @@
   </url>
   
   <url>
-    <loc>https://projectmayhem.netlify.app/post/</loc>
-    <lastmod>2020-09-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://projectmayhem.netlify.app/categories/r/</loc>
-    <lastmod>2020-09-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://projectmayhem.netlify.app/</loc>
-    <lastmod>2020-09-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://projectmayhem.netlify.app/tags/</loc>
     <lastmod>2020-09-27T00:00:00+00:00</lastmod>
   </url>
   

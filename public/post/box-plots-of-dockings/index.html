@@ -1,0 +1,731 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>Box Plots of Dockings // R &amp; Analiz</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.72.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Ali Osman ÖZTOP" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://projectmayhem.netlify.app/css/main.min.366e0ee61030653c4f8925f9bd4a9db5b3c23b09a6fddf2bccb02e2426ecde43.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Box Plots of Dockings"/>
+<meta name="twitter:description" content="# install.packages(&quot;tidyverse&quot;)# install.packages(&quot;ggplot2&quot;)library(tidyverse)## -- Attaching packages -------------------------------------------- tidyverse 1.3.0 --## &lt;U&#43;221A&gt; ggplot2 3.3.2 &lt;U&#43;221A&gt; purrr 0.3.4## &lt;U&#43;221A&gt; tibble 3.0.2 &lt;U&#43;221A&gt; dplyr 1.0.0## &lt;U&#43;221A&gt; tidyr 1.1.0 &lt;U&#43;221A&gt; stringr 1.4.0## &lt;U&#43;221A&gt; readr 1.3.1 &lt;U&#43;221A&gt; forcats 0.5.0## -- Conflicts ----------------------------------------------- tidyverse_conflicts() --## x dplyr::filter() masks stats::filter()## x dplyr::lag() masks stats::lag()library(ggplot2)# Change the path according to your setupMainfolder &lt;- &quot;C:/Users/SATELLITE/Desktop/data/R_Codes-master/BoxPlotsofDockings/Dockings2&quot;setwd(Mainfolder)# Fetch the file pathsdata &lt;- list."/>
+
+    <meta property="og:title" content="Box Plots of Dockings" />
+<meta property="og:description" content="# install.packages(&quot;tidyverse&quot;)# install.packages(&quot;ggplot2&quot;)library(tidyverse)## -- Attaching packages -------------------------------------------- tidyverse 1.3.0 --## &lt;U&#43;221A&gt; ggplot2 3.3.2 &lt;U&#43;221A&gt; purrr 0.3.4## &lt;U&#43;221A&gt; tibble 3.0.2 &lt;U&#43;221A&gt; dplyr 1.0.0## &lt;U&#43;221A&gt; tidyr 1.1.0 &lt;U&#43;221A&gt; stringr 1.4.0## &lt;U&#43;221A&gt; readr 1.3.1 &lt;U&#43;221A&gt; forcats 0.5.0## -- Conflicts ----------------------------------------------- tidyverse_conflicts() --## x dplyr::filter() masks stats::filter()## x dplyr::lag() masks stats::lag()library(ggplot2)# Change the path according to your setupMainfolder &lt;- &quot;C:/Users/SATELLITE/Desktop/data/R_Codes-master/BoxPlotsofDockings/Dockings2&quot;setwd(Mainfolder)# Fetch the file pathsdata &lt;- list." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://projectmayhem.netlify.app/post/box-plots-of-dockings/" />
+<meta property="article:published_time" content="2020-09-27T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-09-27T00:00:00+00:00" />
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://projectmayhem.netlify.app"><img class="app-header-avatar" src="/avatar.jpg" alt="Ali Osman ÖZTOP" /></a>
+      <h1>R &amp; Analiz</h1>
+      <p>Finans ve R</p>
+      <div class="app-header-social">
+        
+          <a target="_blank" href="https://github.com/fabricandofitfaber" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg></a>
+        
+          <a target="_blank" href="https://twitter.com/gohugoio" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-twitter">
+  <title>twitter</title>
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+</svg></a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Box Plots of Dockings</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Sep 27, 2020
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          12 min read
+        </div><div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line>
+</svg>
+          </div></div>
+    </header>
+    <div class="post-content">
+      
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<pre class="r"><code># install.packages(&quot;tidyverse&quot;)
+# install.packages(&quot;ggplot2&quot;)
+
+library(tidyverse)</code></pre>
+<pre><code>## -- Attaching packages -------------------------------------------- tidyverse 1.3.0 --</code></pre>
+<pre><code>## &lt;U+221A&gt; ggplot2 3.3.2     &lt;U+221A&gt; purrr   0.3.4
+## &lt;U+221A&gt; tibble  3.0.2     &lt;U+221A&gt; dplyr   1.0.0
+## &lt;U+221A&gt; tidyr   1.1.0     &lt;U+221A&gt; stringr 1.4.0
+## &lt;U+221A&gt; readr   1.3.1     &lt;U+221A&gt; forcats 0.5.0</code></pre>
+<pre><code>## -- Conflicts ----------------------------------------------- tidyverse_conflicts() --
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()</code></pre>
+<pre class="r"><code>library(ggplot2)</code></pre>
+<pre class="r"><code># Change the path according to your setup
+Mainfolder &lt;- &quot;C:/Users/SATELLITE/Desktop/data/R_Codes-master/BoxPlotsofDockings/Dockings2&quot;
+
+setwd(Mainfolder)</code></pre>
+<pre class="r"><code># Fetch the file paths
+data &lt;- list.files(Mainfolder,recursive=T,pattern=&quot;.csv&quot;,full.names=T)
+data</code></pre>
+<pre><code>## [1] &quot;C:/Users/SATELLITE/Desktop/data/R_Codes-master/BoxPlotsofDockings/Dockings2/ProtA.csv&quot;
+## [2] &quot;C:/Users/SATELLITE/Desktop/data/R_Codes-master/BoxPlotsofDockings/Dockings2/ProtB.csv&quot;
+## [3] &quot;C:/Users/SATELLITE/Desktop/data/R_Codes-master/BoxPlotsofDockings/Dockings2/ProtC.csv&quot;
+## [4] &quot;C:/Users/SATELLITE/Desktop/data/R_Codes-master/BoxPlotsofDockings/Dockings2/ProtD.csv&quot;
+## [5] &quot;C:/Users/SATELLITE/Desktop/data/R_Codes-master/BoxPlotsofDockings/Dockings2/ProtE.csv&quot;
+## [6] &quot;C:/Users/SATELLITE/Desktop/data/R_Codes-master/BoxPlotsofDockings/Dockings2/ProtF.csv&quot;
+## [7] &quot;C:/Users/SATELLITE/Desktop/data/R_Codes-master/BoxPlotsofDockings/Dockings2/ProtG.csv&quot;
+## [8] &quot;C:/Users/SATELLITE/Desktop/data/R_Codes-master/BoxPlotsofDockings/Dockings2/ProtH.csv&quot;</code></pre>
+<pre class="r"><code>class(data)</code></pre>
+<pre><code>## [1] &quot;character&quot;</code></pre>
+<pre class="r"><code># Read the data in the files
+datafiles &lt;- lapply(data,read.csv)
+datafiles</code></pre>
+<pre><code>## [[1]]
+##                        Ligand Binding.Affinity
+## 1        ProtA_1_Azithromycin             -8.8
+## 2        ProtA_1_Azithromycin             -8.5
+## 3          ProtA_1_Remdesivir             -8.2
+## 4          ProtA_1_Remdesivir             -8.2
+## 5        ProtA_1_Azithromycin             -8.1
+## 6        ProtA_1_Azithromycin             -8.1
+## 7          ProtA_1_Remdesivir             -8.1
+## 8         ProtA_1_Aloe-emodin             -8.0
+## 9        ProtA_1_Azithromycin             -8.0
+## 10       ProtA_1_Azithromycin             -8.0
+## 11       ProtA_1_Azithromycin             -8.0
+## 12        ProtA_1_Aloe-emodin             -7.8
+## 13       ProtA_1_Azithromycin             -7.8
+## 14       ProtA_1_Azithromycin             -7.8
+## 15         ProtA_1_Remdesivir             -7.8
+## 16        ProtA_1_Aloe-emodin             -7.7
+## 17        ProtA_1_Aloe-emodin             -7.6
+## 18          ProtA_1_lopinavir             -7.6
+## 19        ProtA_1_Aloe-emodin             -7.5
+## 20        ProtA_1_Aloe-emodin             -7.5
+## 21        ProtA_1_Aloe-emodin             -7.5
+## 22        ProtA_1_Aloe-emodin             -7.5
+## 23          ProtA_1_Ritonavir             -7.5
+## 24        ProtA_1_Aloe-emodin             -7.3
+## 25          ProtA_1_lopinavir             -7.3
+## 26          ProtA_1_Ritonavir             -7.2
+## 27          ProtA_1_Ritonavir             -7.2
+## 28          ProtA_1_lopinavir             -7.2
+## 29          ProtA_1_lopinavir             -7.2
+## 30          ProtA_1_lopinavir             -7.2
+## 31 ProtA_1_Hydroxychloroquine             -7.1
+## 32         ProtA_1_Remdesivir             -7.1
+## 33          ProtA_1_Ritonavir             -7.1
+## 34          ProtA_1_Ritonavir             -7.1
+## 35          ProtA_1_Ritonavir             -7.1
+## 36          ProtA_1_Ritonavir             -7.1
+## 37          ProtA_1_lopinavir             -7.1
+## 38          ProtA_1_lopinavir             -7.1
+## 39         ProtA_1_Remdesivir             -7.0
+## 40         ProtA_1_Remdesivir             -7.0
+## 41          ProtA_1_Ritonavir             -7.0
+## 42          ProtA_1_Ritonavir             -7.0
+## 43          ProtA_1_lopinavir             -7.0
+## 44         ProtA_1_Remdesivir             -6.9
+## 45         ProtA_1_Remdesivir             -6.9
+## 46          ProtA_1_lopinavir             -6.9
+## 47        ProtA_1_Favipiravir             -6.7
+## 48 ProtA_1_Hydroxychloroquine             -6.4
+## 49 ProtA_1_Hydroxychloroquine             -6.4
+## 50 ProtA_1_Hydroxychloroquine             -6.3
+## 51 ProtA_1_Hydroxychloroquine             -6.3
+## 52 ProtA_1_Hydroxychloroquine             -6.2
+## 53 ProtA_1_Hydroxychloroquine             -6.1
+## 54 ProtA_1_Hydroxychloroquine             -6.1
+## 55 ProtA_1_Hydroxychloroquine             -6.1
+## 56        ProtA_1_Favipiravir             -6.0
+## 57        ProtA_1_chloroquine             -5.9
+## 58        ProtA_1_Favipiravir             -5.8
+## 59        ProtA_1_chloroquine             -5.8
+## 60        ProtA_1_chloroquine             -5.8
+## 61        ProtA_1_chloroquine             -5.8
+## 62        ProtA_1_chloroquine             -5.8
+## 63        ProtA_1_chloroquine             -5.8
+## 64        ProtA_1_chloroquine             -5.7
+## 65        ProtA_1_chloroquine             -5.7
+## 66        ProtA_1_chloroquine             -5.7
+## 67        ProtA_1_Favipiravir             -5.5
+## 68        ProtA_1_Favipiravir             -5.4
+## 69        ProtA_1_Favipiravir             -5.4
+## 70        ProtA_1_Favipiravir             -5.2
+## 71        ProtA_1_Favipiravir             -5.0
+## 72        ProtA_1_Favipiravir             -4.7
+## 
+## [[2]]
+##                        Ligand Binding.Affinity
+## 1        ProtB_1_Azithromycin             -9.0
+## 2        ProtB_1_Azithromycin             -8.8
+## 3        ProtB_1_Azithromycin             -8.7
+## 4        ProtB_1_Azithromycin             -8.7
+## 5        ProtB_1_Azithromycin             -8.6
+## 6        ProtB_1_Azithromycin             -8.6
+## 7        ProtB_1_Azithromycin             -8.4
+## 8        ProtB_1_Azithromycin             -8.4
+## 9        ProtB_1_Azithromycin             -8.3
+## 10         ProtB_1_Remdesivir             -8.3
+## 11         ProtB_1_Remdesivir             -8.0
+## 12        ProtB_1_Aloe-emodin             -7.9
+## 13         ProtB_1_Remdesivir             -7.9
+## 14         ProtB_1_Remdesivir             -7.9
+## 15        ProtB_1_Aloe-emodin             -7.8
+## 16        ProtB_1_Aloe-emodin             -7.8
+## 17        ProtB_1_Aloe-emodin             -7.8
+## 18          ProtB_1_Ritonavir             -7.8
+## 19          ProtB_1_Ritonavir             -7.8
+## 20        ProtB_1_Aloe-emodin             -7.7
+## 21          ProtB_1_Ritonavir             -7.7
+## 22          ProtB_1_Ritonavir             -7.7
+## 23        ProtB_1_Aloe-emodin             -7.6
+## 24          ProtB_1_Ritonavir             -7.6
+## 25          ProtB_1_Ritonavir             -7.6
+## 26          ProtB_1_Ritonavir             -7.6
+## 27          ProtB_1_lopinavir             -7.6
+## 28        ProtB_1_Aloe-emodin             -7.5
+## 29         ProtB_1_Remdesivir             -7.5
+## 30          ProtB_1_Ritonavir             -7.5
+## 31          ProtB_1_Ritonavir             -7.5
+## 32          ProtB_1_lopinavir             -7.5
+## 33          ProtB_1_lopinavir             -7.5
+## 34          ProtB_1_lopinavir             -7.5
+## 35          ProtB_1_lopinavir             -7.5
+## 36        ProtB_1_Aloe-emodin             -7.4
+## 37        ProtB_1_Aloe-emodin             -7.4
+## 38          ProtB_1_lopinavir             -7.4
+## 39          ProtB_1_lopinavir             -7.4
+## 40          ProtB_1_lopinavir             -7.4
+## 41          ProtB_1_lopinavir             -7.4
+## 42         ProtB_1_Remdesivir             -7.3
+## 43         ProtB_1_Remdesivir             -7.2
+## 44         ProtB_1_Remdesivir             -7.2
+## 45         ProtB_1_Remdesivir             -7.2
+## 46        ProtB_1_chloroquine             -6.2
+## 47 ProtB_1_Hydroxychloroquine             -6.1
+## 48 ProtB_1_Hydroxychloroquine             -6.0
+## 49        ProtB_1_chloroquine             -6.0
+## 50 ProtB_1_Hydroxychloroquine             -5.9
+## 51 ProtB_1_Hydroxychloroquine             -5.9
+## 52        ProtB_1_chloroquine             -5.9
+## 53        ProtB_1_chloroquine             -5.9
+## 54 ProtB_1_Hydroxychloroquine             -5.8
+## 55 ProtB_1_Hydroxychloroquine             -5.8
+## 56 ProtB_1_Hydroxychloroquine             -5.8
+## 57 ProtB_1_Hydroxychloroquine             -5.8
+## 58        ProtB_1_chloroquine             -5.8
+## 59        ProtB_1_chloroquine             -5.8
+## 60        ProtB_1_Favipiravir             -5.7
+## 61 ProtB_1_Hydroxychloroquine             -5.7
+## 62        ProtB_1_chloroquine             -5.7
+## 63        ProtB_1_chloroquine             -5.7
+## 64        ProtB_1_chloroquine             -5.7
+## 65        ProtB_1_Favipiravir             -5.4
+## 66        ProtB_1_Favipiravir             -5.4
+## 67        ProtB_1_Favipiravir             -5.3
+## 68        ProtB_1_Favipiravir             -5.1
+## 69        ProtB_1_Favipiravir             -5.0
+## 70        ProtB_1_Favipiravir             -5.0
+## 71        ProtB_1_Favipiravir             -5.0
+## 72        ProtB_1_Favipiravir             -4.9
+## 
+## [[3]]
+##                        Ligand Binding.Affinity
+## 1         ProtC_1_Aloe-emodin             -8.5
+## 2          ProtC_1_Remdesivir             -8.5
+## 3        ProtC_1_Azithromycin             -8.4
+## 4          ProtC_1_Remdesivir             -8.4
+## 5          ProtC_1_Remdesivir             -8.3
+## 6           ProtC_1_lopinavir             -8.3
+## 7           ProtC_1_lopinavir             -8.3
+## 8           ProtC_1_lopinavir             -8.2
+## 9           ProtC_1_lopinavir             -8.2
+## 10       ProtC_1_Azithromycin             -8.1
+## 11          ProtC_1_lopinavir             -8.1
+## 12        ProtC_1_Aloe-emodin             -8.0
+## 13        ProtC_1_Aloe-emodin             -8.0
+## 14        ProtC_1_Aloe-emodin             -7.9
+## 15       ProtC_1_Azithromycin             -7.9
+## 16       ProtC_1_Azithromycin             -7.9
+## 17         ProtC_1_Remdesivir             -7.9
+## 18          ProtC_1_lopinavir             -7.9
+## 19          ProtC_1_lopinavir             -7.9
+## 20        ProtC_1_Aloe-emodin             -7.8
+## 21        ProtC_1_Aloe-emodin             -7.8
+## 22       ProtC_1_Azithromycin             -7.8
+## 23       ProtC_1_Azithromycin             -7.8
+## 24         ProtC_1_Remdesivir             -7.8
+## 25          ProtC_1_lopinavir             -7.8
+## 26        ProtC_1_Aloe-emodin             -7.7
+## 27         ProtC_1_Remdesivir             -7.7
+## 28       ProtC_1_Azithromycin             -7.6
+## 29         ProtC_1_Remdesivir             -7.6
+## 30          ProtC_1_lopinavir             -7.6
+## 31        ProtC_1_Aloe-emodin             -7.5
+## 32         ProtC_1_Remdesivir             -7.5
+## 33         ProtC_1_Remdesivir             -7.5
+## 34        ProtC_1_Aloe-emodin             -7.4
+## 35       ProtC_1_Azithromycin             -7.4
+## 36       ProtC_1_Azithromycin             -7.3
+## 37          ProtC_1_Ritonavir             -7.0
+## 38          ProtC_1_Ritonavir             -7.0
+## 39          ProtC_1_Ritonavir             -6.9
+## 40          ProtC_1_Ritonavir             -6.8
+## 41          ProtC_1_Ritonavir             -6.7
+## 42          ProtC_1_Ritonavir             -6.7
+## 43 ProtC_1_Hydroxychloroquine             -6.6
+## 44          ProtC_1_Ritonavir             -6.6
+## 45          ProtC_1_Ritonavir             -6.6
+## 46          ProtC_1_Ritonavir             -6.6
+## 47 ProtC_1_Hydroxychloroquine             -6.0
+## 48        ProtC_1_chloroquine             -6.0
+## 49        ProtC_1_chloroquine             -6.0
+## 50 ProtC_1_Hydroxychloroquine             -5.9
+## 51        ProtC_1_chloroquine             -5.9
+## 52        ProtC_1_chloroquine             -5.9
+## 53 ProtC_1_Hydroxychloroquine             -5.8
+## 54        ProtC_1_chloroquine             -5.8
+## 55        ProtC_1_chloroquine             -5.8
+## 56        ProtC_1_chloroquine             -5.8
+## 57        ProtC_1_chloroquine             -5.8
+## 58 ProtC_1_Hydroxychloroquine             -5.7
+## 59 ProtC_1_Hydroxychloroquine             -5.7
+## 60 ProtC_1_Hydroxychloroquine             -5.7
+## 61 ProtC_1_Hydroxychloroquine             -5.7
+## 62 ProtC_1_Hydroxychloroquine             -5.7
+## 63        ProtC_1_chloroquine             -5.7
+## 64        ProtC_1_Favipiravir             -5.4
+## 65        ProtC_1_Favipiravir             -5.4
+## 66        ProtC_1_Favipiravir             -5.2
+## 67        ProtC_1_Favipiravir             -5.2
+## 68        ProtC_1_Favipiravir             -5.2
+## 69        ProtC_1_Favipiravir             -5.1
+## 70        ProtC_1_Favipiravir             -5.1
+## 71        ProtC_1_Favipiravir             -5.0
+## 72        ProtC_1_Favipiravir             -4.9
+## 
+## [[4]]
+##                        Ligand Binding.Affinity
+## 1         ProtD_1_Aloe-emodin            -10.3
+## 2         ProtD_1_Aloe-emodin            -10.0
+## 3         ProtD_1_Aloe-emodin             -9.8
+## 4         ProtD_1_Aloe-emodin             -9.8
+## 5         ProtD_1_Aloe-emodin             -9.8
+## 6          ProtD_1_Remdesivir             -9.8
+## 7         ProtD_1_Aloe-emodin             -9.6
+## 8          ProtD_1_Remdesivir             -9.4
+## 9          ProtD_1_Remdesivir             -9.4
+## 10          ProtD_1_Ritonavir             -9.4
+## 11        ProtD_1_Aloe-emodin             -9.3
+## 12         ProtD_1_Remdesivir             -9.2
+## 13         ProtD_1_Remdesivir             -9.1
+## 14       ProtD_1_Azithromycin             -8.9
+## 15         ProtD_1_Remdesivir             -8.9
+## 16          ProtD_1_lopinavir             -8.9
+## 17         ProtD_1_Remdesivir             -8.8
+## 18          ProtD_1_Ritonavir             -8.8
+## 19          ProtD_1_lopinavir             -8.8
+## 20          ProtD_1_lopinavir             -8.8
+## 21          ProtD_1_lopinavir             -8.8
+## 22          ProtD_1_lopinavir             -8.7
+## 23          ProtD_1_lopinavir             -8.7
+## 24       ProtD_1_Azithromycin             -8.6
+## 25       ProtD_1_Azithromycin             -8.6
+## 26          ProtD_1_Ritonavir             -8.6
+## 27          ProtD_1_lopinavir             -8.6
+## 28       ProtD_1_Azithromycin             -8.5
+## 29          ProtD_1_Ritonavir             -8.5
+## 30          ProtD_1_Ritonavir             -8.5
+## 31          ProtD_1_Ritonavir             -8.5
+## 32          ProtD_1_lopinavir             -8.5
+## 33          ProtD_1_lopinavir             -8.5
+## 34        ProtD_1_Aloe-emodin             -8.4
+## 35       ProtD_1_Azithromycin             -8.4
+## 36       ProtD_1_Azithromycin             -8.4
+## 37       ProtD_1_Azithromycin             -8.4
+## 38       ProtD_1_Azithromycin             -8.4
+## 39          ProtD_1_Ritonavir             -8.4
+## 40          ProtD_1_Ritonavir             -8.4
+## 41          ProtD_1_Ritonavir             -8.4
+## 42        ProtD_1_Aloe-emodin             -8.3
+## 43       ProtD_1_Azithromycin             -8.3
+## 44 ProtD_1_Hydroxychloroquine             -7.7
+## 45 ProtD_1_Hydroxychloroquine             -7.6
+## 46        ProtD_1_chloroquine             -7.6
+## 47 ProtD_1_Hydroxychloroquine             -7.5
+## 48 ProtD_1_Hydroxychloroquine             -7.4
+## 49        ProtD_1_chloroquine             -7.4
+## 50        ProtD_1_chloroquine             -7.3
+## 51        ProtD_1_chloroquine             -7.3
+## 52 ProtD_1_Hydroxychloroquine             -6.9
+## 53 ProtD_1_Hydroxychloroquine             -6.9
+## 54        ProtD_1_Favipiravir             -6.7
+## 55        ProtD_1_Favipiravir             -6.5
+## 56        ProtD_1_Favipiravir             -6.5
+## 57        ProtD_1_Favipiravir             -6.3
+## 58        ProtD_1_Favipiravir             -6.0
+## 59        ProtD_1_Favipiravir             -6.0
+## 60        ProtD_1_Favipiravir             -6.0
+## 61        ProtD_1_Favipiravir             -5.6
+## 62        ProtD_1_Favipiravir             -5.6
+## 
+## [[5]]
+##                        Ligand Binding.Affinity
+## 1        ProtE_1_Azithromycin             -8.4
+## 2        ProtE_1_Azithromycin             -8.2
+## 3         ProtE_1_Aloe-emodin             -8.1
+## 4        ProtE_1_Azithromycin             -8.1
+## 5         ProtE_1_Aloe-emodin             -8.0
+## 6         ProtE_1_Aloe-emodin             -7.9
+## 7         ProtE_1_Aloe-emodin             -7.9
+## 8        ProtE_1_Azithromycin             -7.9
+## 9        ProtE_1_Azithromycin             -7.9
+## 10       ProtE_1_Azithromycin             -7.8
+## 11       ProtE_1_Azithromycin             -7.8
+## 12         ProtE_1_Remdesivir             -7.8
+## 13        ProtE_1_Aloe-emodin             -7.7
+## 14       ProtE_1_Azithromycin             -7.7
+## 15       ProtE_1_Azithromycin             -7.7
+## 16         ProtE_1_Remdesivir             -7.5
+## 17         ProtE_1_Remdesivir             -7.5
+## 18          ProtE_1_lopinavir             -7.5
+## 19          ProtE_1_lopinavir             -7.4
+## 20          ProtE_1_lopinavir             -7.4
+## 21          ProtE_1_lopinavir             -7.4
+## 22        ProtE_1_Aloe-emodin             -7.3
+## 23        ProtE_1_Aloe-emodin             -7.3
+## 24        ProtE_1_Aloe-emodin             -7.3
+## 25        ProtE_1_Aloe-emodin             -7.3
+## 26         ProtE_1_Remdesivir             -7.3
+## 27         ProtE_1_Remdesivir             -7.3
+## 28          ProtE_1_lopinavir             -7.3
+## 29          ProtE_1_lopinavir             -7.3
+## 30          ProtE_1_lopinavir             -7.3
+## 31         ProtE_1_Remdesivir             -7.2
+## 32          ProtE_1_lopinavir             -7.2
+## 33          ProtE_1_lopinavir             -7.2
+## 34         ProtE_1_Remdesivir             -7.1
+## 35         ProtE_1_Remdesivir             -7.0
+## 36         ProtE_1_Remdesivir             -7.0
+## 37          ProtE_1_Ritonavir             -7.0
+## 38          ProtE_1_Ritonavir             -6.9
+## 39          ProtE_1_Ritonavir             -6.8
+## 40          ProtE_1_Ritonavir             -6.8
+## 41          ProtE_1_Ritonavir             -6.7
+## 42          ProtE_1_Ritonavir             -6.7
+## 43          ProtE_1_Ritonavir             -6.7
+## 44          ProtE_1_Ritonavir             -6.7
+## 45          ProtE_1_Ritonavir             -6.5
+## 46 ProtE_1_Hydroxychloroquine             -6.3
+## 47        ProtE_1_Favipiravir             -6.1
+## 48 ProtE_1_Hydroxychloroquine             -6.1
+## 49 ProtE_1_Hydroxychloroquine             -6.1
+## 50 ProtE_1_Hydroxychloroquine             -6.1
+## 51 ProtE_1_Hydroxychloroquine             -6.1
+## 52        ProtE_1_chloroquine             -6.1
+## 53 ProtE_1_Hydroxychloroquine             -6.0
+## 54 ProtE_1_Hydroxychloroquine             -6.0
+## 55        ProtE_1_chloroquine             -6.0
+## 56        ProtE_1_chloroquine             -6.0
+## 57 ProtE_1_Hydroxychloroquine             -5.9
+## 58 ProtE_1_Hydroxychloroquine             -5.9
+## 59        ProtE_1_chloroquine             -5.9
+## 60        ProtE_1_chloroquine             -5.9
+## 61        ProtE_1_chloroquine             -5.8
+## 62        ProtE_1_chloroquine             -5.8
+## 63        ProtE_1_chloroquine             -5.8
+## 64        ProtE_1_Favipiravir             -5.7
+## 65        ProtE_1_chloroquine             -5.7
+## 66        ProtE_1_Favipiravir             -5.6
+## 67        ProtE_1_Favipiravir             -5.5
+## 68        ProtE_1_Favipiravir             -5.3
+## 69        ProtE_1_Favipiravir             -5.3
+## 70        ProtE_1_Favipiravir             -4.9
+## 71        ProtE_1_Favipiravir             -4.9
+## 72        ProtE_1_Favipiravir             -4.8
+## 
+## [[6]]
+##                        Ligand Binding.Affinity
+## 1         ProtF_1_Aloe-emodin             -7.6
+## 2         ProtF_1_Aloe-emodin             -7.3
+## 3         ProtF_1_Aloe-emodin             -6.9
+## 4         ProtF_1_Aloe-emodin             -6.8
+## 5         ProtF_1_Aloe-emodin             -6.8
+## 6         ProtF_1_Aloe-emodin             -6.8
+## 7         ProtF_1_Aloe-emodin             -6.8
+## 8         ProtF_1_Aloe-emodin             -6.7
+## 9         ProtF_1_Aloe-emodin             -6.7
+## 10       ProtF_1_Azithromycin             -6.7
+## 11       ProtF_1_Azithromycin             -6.7
+## 12       ProtF_1_Azithromycin             -6.5
+## 13       ProtF_1_Azithromycin             -6.3
+## 14       ProtF_1_Azithromycin             -6.3
+## 15       ProtF_1_Azithromycin             -6.2
+## 16         ProtF_1_Remdesivir             -6.1
+## 17          ProtF_1_Ritonavir             -6.0
+## 18          ProtF_1_lopinavir             -6.0
+## 19       ProtF_1_Azithromycin             -5.9
+## 20       ProtF_1_Azithromycin             -5.9
+## 21       ProtF_1_Azithromycin             -5.9
+## 22         ProtF_1_Remdesivir             -5.9
+## 23          ProtF_1_lopinavir             -5.9
+## 24 ProtF_1_Hydroxychloroquine             -5.8
+## 25 ProtF_1_Hydroxychloroquine             -5.8
+## 26         ProtF_1_Remdesivir             -5.8
+## 27          ProtF_1_Ritonavir             -5.8
+## 28          ProtF_1_Ritonavir             -5.8
+## 29          ProtF_1_Ritonavir             -5.8
+## 30         ProtF_1_Remdesivir             -5.7
+## 31         ProtF_1_Remdesivir             -5.7
+## 32         ProtF_1_Remdesivir             -5.7
+## 33          ProtF_1_Ritonavir             -5.7
+## 34          ProtF_1_lopinavir             -5.7
+## 35          ProtF_1_lopinavir             -5.7
+## 36          ProtF_1_lopinavir             -5.7
+## 37         ProtF_1_Remdesivir             -5.6
+## 38         ProtF_1_Remdesivir             -5.6
+## 39         ProtF_1_Remdesivir             -5.6
+## 40          ProtF_1_Ritonavir             -5.6
+## 41          ProtF_1_Ritonavir             -5.6
+## 42          ProtF_1_Ritonavir             -5.6
+## 43          ProtF_1_Ritonavir             -5.6
+## 44          ProtF_1_lopinavir             -5.6
+## 45          ProtF_1_lopinavir             -5.6
+## 46 ProtF_1_Hydroxychloroquine             -5.5
+## 47        ProtF_1_chloroquine             -5.5
+## 48          ProtF_1_lopinavir             -5.5
+## 49          ProtF_1_lopinavir             -5.5
+## 50 ProtF_1_Hydroxychloroquine             -5.4
+## 51 ProtF_1_Hydroxychloroquine             -5.4
+## 52        ProtF_1_chloroquine             -5.4
+## 53 ProtF_1_Hydroxychloroquine             -5.3
+## 54 ProtF_1_Hydroxychloroquine             -5.3
+## 55 ProtF_1_Hydroxychloroquine             -5.3
+## 56 ProtF_1_Hydroxychloroquine             -5.3
+## 57        ProtF_1_chloroquine             -5.3
+## 58        ProtF_1_chloroquine             -5.2
+## 59        ProtF_1_chloroquine             -5.2
+## 60        ProtF_1_chloroquine             -5.1
+## 61        ProtF_1_chloroquine             -5.1
+## 62        ProtF_1_chloroquine             -5.1
+## 63        ProtF_1_Favipiravir             -5.0
+## 64        ProtF_1_chloroquine             -5.0
+## 65        ProtF_1_Favipiravir             -4.9
+## 66        ProtF_1_Favipiravir             -4.8
+## 67        ProtF_1_Favipiravir             -4.7
+## 68        ProtF_1_Favipiravir             -4.7
+## 69        ProtF_1_Favipiravir             -4.7
+## 70        ProtF_1_Favipiravir             -4.4
+## 71        ProtF_1_Favipiravir             -4.4
+## 72        ProtF_1_Favipiravir             -4.4
+## 
+## [[7]]
+##                        Ligand Binding.Affinity
+## 1        ProtG_1_Azithromycin             -9.3
+## 2        ProtG_1_Azithromycin             -8.7
+## 3        ProtG_1_Azithromycin             -8.6
+## 4        ProtG_1_Azithromycin             -8.6
+## 5        ProtG_1_Azithromycin             -8.5
+## 6        ProtG_1_Azithromycin             -8.3
+## 7        ProtG_1_Azithromycin             -8.2
+## 8        ProtG_1_Azithromycin             -8.0
+## 9         ProtG_1_Aloe-emodin             -7.9
+## 10        ProtG_1_Aloe-emodin             -7.9
+## 11       ProtG_1_Azithromycin             -7.9
+## 12        ProtG_1_Aloe-emodin             -7.8
+## 13         ProtG_1_Remdesivir             -7.7
+## 14         ProtG_1_Remdesivir             -7.6
+## 15         ProtG_1_Remdesivir             -7.5
+## 16          ProtG_1_lopinavir             -7.4
+## 17        ProtG_1_Aloe-emodin             -7.3
+## 18        ProtG_1_Aloe-emodin             -7.3
+## 19        ProtG_1_Aloe-emodin             -7.3
+## 20         ProtG_1_Remdesivir             -7.3
+## 21          ProtG_1_lopinavir             -7.3
+## 22        ProtG_1_Aloe-emodin             -7.2
+## 23        ProtG_1_Aloe-emodin             -7.2
+## 24         ProtG_1_Remdesivir             -7.2
+## 25         ProtG_1_Remdesivir             -7.2
+## 26          ProtG_1_lopinavir             -7.2
+## 27        ProtG_1_Aloe-emodin             -7.1
+## 28         ProtG_1_Remdesivir             -7.1
+## 29          ProtG_1_lopinavir             -7.1
+## 30          ProtG_1_lopinavir             -7.1
+## 31          ProtG_1_lopinavir             -7.1
+## 32          ProtG_1_lopinavir             -7.1
+## 33         ProtG_1_Remdesivir             -7.0
+## 34         ProtG_1_Remdesivir             -7.0
+## 35          ProtG_1_lopinavir             -7.0
+## 36          ProtG_1_lopinavir             -7.0
+## 37          ProtG_1_Ritonavir             -6.7
+## 38          ProtG_1_Ritonavir             -6.7
+## 39          ProtG_1_Ritonavir             -6.7
+## 40          ProtG_1_Ritonavir             -6.6
+## 41 ProtG_1_Hydroxychloroquine             -6.5
+## 42        ProtG_1_chloroquine             -6.5
+## 43 ProtG_1_Hydroxychloroquine             -6.4
+## 44          ProtG_1_Ritonavir             -6.3
+## 45          ProtG_1_Ritonavir             -6.3
+## 46        ProtG_1_chloroquine             -6.3
+## 47        ProtG_1_chloroquine             -6.3
+## 48 ProtG_1_Hydroxychloroquine             -6.2
+## 49          ProtG_1_Ritonavir             -6.2
+## 50          ProtG_1_Ritonavir             -6.2
+## 51          ProtG_1_Ritonavir             -6.2
+## 52        ProtG_1_chloroquine             -6.2
+## 53        ProtG_1_chloroquine             -6.2
+## 54        ProtG_1_chloroquine             -6.2
+## 55 ProtG_1_Hydroxychloroquine             -6.1
+## 56        ProtG_1_chloroquine             -6.1
+## 57 ProtG_1_Hydroxychloroquine             -6.0
+## 58 ProtG_1_Hydroxychloroquine             -6.0
+## 59 ProtG_1_Hydroxychloroquine             -6.0
+## 60 ProtG_1_Hydroxychloroquine             -6.0
+## 61 ProtG_1_Hydroxychloroquine             -6.0
+## 62        ProtG_1_chloroquine             -6.0
+## 63        ProtG_1_chloroquine             -6.0
+## 64        ProtG_1_Favipiravir             -5.8
+## 65        ProtG_1_Favipiravir             -5.6
+## 66        ProtG_1_Favipiravir             -5.3
+## 67        ProtG_1_Favipiravir             -5.2
+## 68        ProtG_1_Favipiravir             -5.1
+## 69        ProtG_1_Favipiravir             -5.0
+## 70        ProtG_1_Favipiravir             -5.0
+## 71        ProtG_1_Favipiravir             -4.8
+## 72        ProtG_1_Favipiravir             -4.7
+## 
+## [[8]]
+##                        Ligand Binding.Affinity
+## 1        ProtH_1_Azithromycin             -9.2
+## 2        ProtH_1_Azithromycin             -8.9
+## 3           ProtH_1_Ritonavir             -8.9
+## 4         ProtH_1_Aloe-emodin             -8.7
+## 5           ProtH_1_Ritonavir             -8.6
+## 6           ProtH_1_lopinavir             -8.4
+## 7           ProtH_1_Ritonavir             -8.3
+## 8           ProtH_1_lopinavir             -8.3
+## 9         ProtH_1_Aloe-emodin             -8.2
+## 10        ProtH_1_Aloe-emodin             -8.2
+## 11          ProtH_1_Ritonavir             -8.2
+## 12          ProtH_1_lopinavir             -8.2
+## 13        ProtH_1_Aloe-emodin             -8.1
+## 14        ProtH_1_Aloe-emodin             -8.1
+## 15       ProtH_1_Azithromycin             -8.0
+## 16          ProtH_1_lopinavir             -8.0
+## 17          ProtH_1_lopinavir             -8.0
+## 18         ProtH_1_Remdesivir             -7.9
+## 19          ProtH_1_lopinavir             -7.9
+## 20          ProtH_1_lopinavir             -7.9
+## 21          ProtH_1_lopinavir             -7.9
+## 22          ProtH_1_lopinavir             -7.9
+## 23        ProtH_1_Aloe-emodin             -7.8
+## 24         ProtH_1_Remdesivir             -7.8
+## 25         ProtH_1_Remdesivir             -7.8
+## 26          ProtH_1_Ritonavir             -7.8
+## 27         ProtH_1_Remdesivir             -7.7
+## 28        ProtH_1_Aloe-emodin             -7.6
+## 29         ProtH_1_Remdesivir             -7.6
+## 30         ProtH_1_Remdesivir             -7.5
+## 31        ProtH_1_Aloe-emodin             -7.4
+## 32       ProtH_1_Azithromycin             -7.3
+## 33       ProtH_1_Azithromycin             -7.3
+## 34 ProtH_1_Hydroxychloroquine             -7.3
+## 35        ProtH_1_Aloe-emodin             -7.1
+## 36 ProtH_1_Hydroxychloroquine             -7.1
+## 37 ProtH_1_Hydroxychloroquine             -7.1
+## 38        ProtH_1_chloroquine             -7.1
+## 39        ProtH_1_chloroquine             -7.1
+## 40       ProtH_1_Azithromycin             -7.0
+## 41 ProtH_1_Hydroxychloroquine             -7.0
+## 42        ProtH_1_chloroquine             -7.0
+## 43       ProtH_1_Azithromycin             -6.9
+## 44       ProtH_1_Azithromycin             -6.9
+## 45 ProtH_1_Hydroxychloroquine             -6.9
+## 46 ProtH_1_Hydroxychloroquine             -6.9
+## 47        ProtH_1_chloroquine             -6.9
+## 48        ProtH_1_chloroquine             -6.9
+## 49       ProtH_1_Azithromycin             -6.8
+## 50        ProtH_1_chloroquine             -6.8
+## 51          ProtH_1_Ritonavir             -6.6
+## 52        ProtH_1_chloroquine             -6.6
+## 53 ProtH_1_Hydroxychloroquine             -6.5
+## 54 ProtH_1_Hydroxychloroquine             -6.4
+## 55          ProtH_1_Ritonavir             -6.2
+## 56          ProtH_1_Ritonavir             -6.2
+## 57        ProtH_1_chloroquine             -6.2
+## 58 ProtH_1_Hydroxychloroquine             -6.1
+## 59          ProtH_1_Ritonavir             -6.1
+## 60        ProtH_1_chloroquine             -6.1
+## 61        ProtH_1_Favipiravir             -5.7
+## 62        ProtH_1_Favipiravir             -5.6
+## 63         ProtH_1_Remdesivir             -5.6
+## 64        ProtH_1_Favipiravir             -5.5
+## 65        ProtH_1_Favipiravir             -5.5
+## 66         ProtH_1_Remdesivir             -5.3
+## 67        ProtH_1_Favipiravir             -5.2
+## 68        ProtH_1_Favipiravir             -5.2
+## 69         ProtH_1_Remdesivir             -5.2
+## 70        ProtH_1_Favipiravir             -5.0
+## 71        ProtH_1_Favipiravir             -5.0
+## 72        ProtH_1_Favipiravir             -4.9</code></pre>
+<pre class="r"><code>class(datafiles)</code></pre>
+<pre><code>## [1] &quot;list&quot;</code></pre>
+<pre class="r"><code># Tidyverse package will be required
+df2 &lt;- data.frame(Reduce(rbind, datafiles)) %&gt;%
+  mutate(ProteinID = str_sub(Ligand,1,5)) %&gt;%
+  mutate(ProteinID = str_to_upper(ProteinID)) %&gt;%
+  mutate(Ligand = gsub(&quot;.*_&quot;, &quot;&quot;, Ligand))</code></pre>
+<pre class="r"><code># Words before 1st underscore 
+plot &lt;- ggplot(df2, aes(x = Ligand, y = Binding.Affinity,color=ProteinID, fill=ProteinID)) +
+  geom_boxplot(outlier.colour=&quot;black&quot;, outlier.shape=8,outlier.size=2,position=position_dodge(1),color=&quot;Black&quot;)+ scale_fill_brewer(palette=&quot;Blues&quot;)+ labs(title=&quot;Binding Affinities of Compounds&quot;,x=&quot;Compounds/Drugs&quot;, y = &quot;Binding Adffinity (kcal/mol)&quot;) +  theme_bw()+ theme(axis.text.x = element_text(angle = 45, vjust = 1,  hjust = 1))
+
+plot</code></pre>
+<p><img src="/post/2020-09-27-box-plots-of-dockings_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<pre class="r"><code>plotfacets &lt;- plot + facet_grid(~ProteinID, scales=&#39;free&#39;) 
+
+plotfacets</code></pre>
+<p><img src="/post/2020-09-27-box-plots-of-dockings_files/figure-html/unnamed-chunk-6-2.png" width="672" /></p>
+<pre class="r"><code>ggsave(&quot;Facets1.pdf&quot;, width = 40, height = 20, units = &quot;cm&quot;)  
+
+
+plotfacets2 &lt;- plot + facet_grid(~Ligand, scales=&#39;free&#39;) 
+plotfacets2</code></pre>
+<p><img src="/post/2020-09-27-box-plots-of-dockings_files/figure-html/unnamed-chunk-6-3.png" width="672" /></p>
+<pre class="r"><code>ggsave(&quot;Facets2.pdf&quot;, width = 40, height = 20, units = &quot;cm&quot;) </code></pre>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
