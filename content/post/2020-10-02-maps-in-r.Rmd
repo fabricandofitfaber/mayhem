@@ -18,7 +18,7 @@ library(readr)
 
 # Example 1
 
-```{r, echo=FALSE}
+```{r}
 states = read_csv("https://raw.githubusercontent.com/fabricandofitfaber/dataset/main/States.csv")
 
 minwage_df = read_csv("https://raw.githubusercontent.com/fabricandofitfaber/dataset/main/Minimum%20Wage%20Data.csv") %>%
@@ -70,7 +70,7 @@ minwage_graph
 
 # Example 2
 
-```{r, echo=FALSE}
+```{r}
 ufos <- read_csv("https://raw.githubusercontent.com/fabricandofitfaber/dataset/main/ufos.csv") %>%
   select(longitude, latitude, datetime, shape)
 
