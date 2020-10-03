@@ -17,6 +17,7 @@ library(readr)
 ```
 
 # Example 1
+
 ```{r}
 states = read_csv("https://raw.githubusercontent.com/fabricandofitfaber/dataset/main/States.csv")
 
@@ -68,6 +69,7 @@ minwage_graph
 ```
 
 # Example 2
+
 ```{r}
 ufos <- read_csv("https://raw.githubusercontent.com/fabricandofitfaber/dataset/main/ufos.csv") %>%
   select(longitude, latitude, datetime, shape)
@@ -90,4 +92,3 @@ ufo.fig = plot_geo(ufos, lat = ~latitude, lon = ~longitude,
 
 ufo.fig
 ```
-
